@@ -1,18 +1,41 @@
 import java.util.*;
 
 public abstract class CompressionSystem {
-    char[] input;
-    char[] sequence;
-    int[] frequency;
-    double[] prob;
-    char[] encodingScheme;
-    double avgLength;
-    int processes;
+    protected final char[] input;
+    protected final char[] symbols;
+    protected final int[] frequencies;
+    protected final double[] probabilities;
 
-    public abstract int getProcesses();
-    public abstract char[] getEncodingScheme();
+    protected CompressionSystem(char[] inputArray) {
+        this.input = Objects.requireNonNull(inputArray, "Input array cannot be null");
+        Object[] analysis = analyzeCharacters(inputArray);
+        this.symbols = (char[]) analysis[0];
+        this.frequencies = (int[]) analysis[1];
+        this.probabilities = computeProbabilities(frequencies, inputArray.length);
+    }
 
-    public Object[] analyzeCharacters(char[] input) {
+    public CompressionReport generateReport() {
+        EncodingResult result = buildCodebook();
+        Map<Character, String> codebook = result.codebook();
+        int encodedBits = 0;
+
+        for (char c : input) {
+            String code = codebook.get(c);
+            if (code == null) {
+                throw new IllegalStateException("Missing code for character: '" + c + "'");
+            }
+            encodedBits += code.length();
+        }
+
+        int totalProcesses = result.processes() + input.length; // include encoding steps
+        return new CompressionReport(getName(), encodedBits, totalProcesses, codebook);
+    }
+
+    protected abstract String getName();
+
+    protected abstract EncodingResult buildCodebook();
+
+    protected Object[] analyzeCharacters(char[] input) {
         Map<Character, Integer> frequencyMap = new HashMap<>();
 
         for (char c : input) {
@@ -38,4 +61,14 @@ public abstract class CompressionSystem {
 
         return new Object[]{uniqueChars, frequencies};
     }
+
+    private double[] computeProbabilities(int[] frequencies, int totalLength) {
+        double[] probs = new double[frequencies.length];
+        for (int i = 0; i < frequencies.length; i++) {
+            probs[i] = (double) frequencies[i] / (double) totalLength;
+        }
+        return probs;
+    }
+
+    protected record EncodingResult(Map<Character, String> codebook, int processes) { }
 }
