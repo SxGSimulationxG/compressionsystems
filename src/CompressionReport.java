@@ -1,0 +1,42 @@
+import java.util.Map;
+
+public class CompressionReport {
+    private final String algorithmName;
+    private final int totalBits;
+    private final int processes;
+    private final Map<Character, String> codebook;
+
+    public CompressionReport(String algorithmName, int totalBits, int processes, Map<Character, String> codebook) {
+        this.algorithmName = algorithmName;
+        this.totalBits = totalBits;
+        this.processes = processes;
+        this.codebook = Map.copyOf(codebook);
+    }
+
+    public String getAlgorithmName() {
+        return algorithmName;
+    }
+
+    public int getTotalBits() {
+        return totalBits;
+    }
+
+    public int getProcesses() {
+        return processes;
+    }
+
+    public Map<Character, String> getCodebook() {
+        return codebook;
+    }
+
+    public int getTotalBytesRounded() {
+        return (int) Math.ceil(totalBits / 8.0);
+    }
+
+    public double compressionRatio(int originalBits) {
+        if (originalBits == 0) {
+            return 0.0;
+        }
+        return (double) totalBits / (double) originalBits;
+    }
+}

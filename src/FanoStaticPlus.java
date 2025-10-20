@@ -1,15 +1,17 @@
+import java.util.Objects;
+
 public class FanoStaticPlus extends CompressionSystem {
     public FanoStaticPlus(char[] inputArray) {
-
+        super(Objects.requireNonNull(inputArray));
     }
 
     @Override
-    public int getProcesses() {
-        return processes;
+    protected String getName() {
+        return "Shannon-Fano Plus";
     }
 
     @Override
-    public char[] getEncodingScheme() {
-        return new char[0];
+    protected EncodingResult buildCodebook() {
+        throw new UnsupportedOperationException("The enhanced Shannon-Fano variant is not implemented in this comparison tool.");
     }
 }

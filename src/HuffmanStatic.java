@@ -1,18 +1,84 @@
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+import java.util.PriorityQueue;
+
 public class HuffmanStatic extends CompressionSystem {
     public HuffmanStatic(char[] inputArray) {
-        input = inputArray;
-        Object[] analysis = analyzeCharacters(input);
-        sequence = (char[]) analysis[0];
-        frequency = (int[]) analysis[1];
+        super(Objects.requireNonNull(inputArray));
     }
 
     @Override
-    public int getProcesses() {
-        return processes;
+    protected String getName() {
+        return "Huffman Coding";
     }
 
     @Override
-    public char[] getEncodingScheme() {
-        return encodingScheme;
+    protected EncodingResult buildCodebook() {
+        Map<Character, String> codes = new HashMap<>();
+        if (symbols.length == 0) {
+            return new EncodingResult(codes, 0);
+        }
+
+        PriorityQueue<Node> queue = new PriorityQueue<>(Comparator.comparingInt(node -> node.frequency));
+        for (int i = 0; i < symbols.length; i++) {
+            queue.offer(new Node(symbols[i], frequencies[i]));
+        }
+
+        int operations = symbols.length; // queue insertions
+
+        while (queue.size() > 1) {
+            Node left = queue.poll();
+            Node right = queue.poll();
+            Node parent = new Node('\0', left.frequency + right.frequency, left, right);
+            queue.offer(parent);
+            operations += 3; // two polls and one offer
+        }
+
+        Node root = queue.poll();
+        if (root.isLeaf()) {
+            codes.put(root.symbol, "0");
+            operations++;
+        } else {
+            operations += assignCodes(root, "", codes);
+        }
+
+        return new EncodingResult(codes, operations);
+    }
+
+    private int assignCodes(Node node, String prefix, Map<Character, String> codes) {
+        if (node.isLeaf()) {
+            String code = prefix.isEmpty() ? "0" : prefix;
+            codes.put(node.symbol, code);
+            return 1;
+        }
+
+        int operations = 1; // split operation
+        operations += assignCodes(Objects.requireNonNull(node.left), prefix + '0', codes);
+        operations += assignCodes(Objects.requireNonNull(node.right), prefix + '1', codes);
+        return operations;
+    }
+
+    private static class Node {
+        final char symbol;
+        final int frequency;
+        final Node left;
+        final Node right;
+
+        Node(char symbol, int frequency) {
+            this(symbol, frequency, null, null);
+        }
+
+        Node(char symbol, int frequency, Node left, Node right) {
+            this.symbol = symbol;
+            this.frequency = frequency;
+            this.left = left;
+            this.right = right;
+        }
+
+        boolean isLeaf() {
+            return left == null && right == null;
+        }
     }
 }

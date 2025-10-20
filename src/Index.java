@@ -1,34 +1,44 @@
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Index {
-    static char[] charArray;
     public static void main(String[] args) {
-        String filePath = "input.txt";
+        String filePath = args.length > 0 ? args[0] : "src/input.txt";
+        Path path = Paths.get(filePath);
 
+        char[] input;
         try {
-            String content = new String(Files.readAllBytes(Paths.get(filePath)));
-            charArray = content.toCharArray();
+            String content = Files.readString(path);
+            input = content.toCharArray();
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+            return;
         }
-        catch (IOException e) {
-            System.out.println("Error reading file: " + e.getMessage());
+
+        if (input.length == 0) {
+            System.out.println("The provided file is empty. There is no data to compress.");
+            return;
         }
 
-        HuffmanStatic huffmanStatic = new HuffmanStatic(charArray);
+        CompressionSystem[] systems = new CompressionSystem[]{
+            new HuffmanStatic(input),
+            new ShannonStatic(input),
+            new FanoStatic(input)
+        };
 
-        HuffmanAdaptive huffmanAdaptive = new HuffmanAdaptive(charArray);
+        int originalBits = input.length * 8;
+        System.out.println("Original size: " + originalBits + " bits (" + (int) Math.ceil(originalBits / 8.0) + " bytes)\n");
 
-        ShannonStatic shannonStatic = new ShannonStatic(charArray);
-
-        ShannonAdaptive shannonAdaptive = new ShannonAdaptive(charArray);
-
-        FanoStatic fanoStatic = new FanoStatic(charArray);
-
-        FanoAdaptive fanoAdaptive = new FanoAdaptive(charArray);
-
-        FanoStaticPlus fanoStaticPlus = new FanoStaticPlus(charArray);
-
-
+        for (CompressionSystem system : systems) {
+            CompressionReport report = system.generateReport();
+            System.out.println(report.getAlgorithmName());
+            System.out.println("Compressed size: " + report.getTotalBits() + " bits (" + report.getTotalBytesRounded() + " bytes)");
+            System.out.println("Processes executed: " + report.getProcesses());
+            double ratio = report.compressionRatio(originalBits);
+            System.out.printf("Compression ratio: %.4f\n", ratio);
+            System.out.println();
+        }
     }
 }
