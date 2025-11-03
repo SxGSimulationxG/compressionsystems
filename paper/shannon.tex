@@ -1,0 +1,28 @@
+\subsection{Shannon Coding}
+Even though the Shannon Method suggested by Claude E. Shannon is not commonly used due to its inefficiency when it comes to the resulting compression size, it still has a relevance in the field. Compared to the Huffman Coding system, this one is based on a top-down construction system making it more intuitive and faster to calculate. This system gives a unique string of numbers by using a cumulative probability function $P_i$ and then taking the first $l_i$ digits of the $r$th decimal representation of the cumulative probability function to create the corresponding code word\footnote{\cite{rueda2002advances} p.52-53: 2.4.2 Shannon's Method; \cite{shannonMathematicalCommunication} p.58-61: 9. The Fundamental Theorem for a Noiseless Channel}.
+\begin{equation}
+	P_i = \left\{
+	\begin{array}{lll}
+		0 & \textbf{for} & i = 1 \\
+		P_{i-1} + p_{i-1} & \textbf{for} & 2 \leq i \leq m
+	\end{array}
+	\right.
+\end{equation}
+
+
+\begin{equation}
+	l_i=\lceil log_r(p_i^{-1})\rceil
+\end{equation}
+
+\subsubsection{Example: Static Shannon Coding}
+
+\todo{Make example}
+\todo{Make example encoding scheme using example}
+
+
+\subsubsection{Adaptive Shannon Coding}
+
+Travis Gagie suggests a method of making an adaptive Shannon coding system. In their method, we separate tasks into foreground and background tasks. The foreground task takes the weight of the previous character counts and updates the weights to the new input character. If the character isn't in the encoding scheme yet, the node is added into the character count. In the background, for each character processed in the foreground, a character is processed in the background. The weight of a certain character $a$ is then updated if the character has occured before, or it is added to the compression tree with the weight corresponding to the characters probability\footnote{\cite{gagie2004dynamic} p.3-4: III Dynamic Shannon Coding}. This system is similar to the Brute-Force adaptive Fano coding system discussed later in this paper. 
+
+\todo{Explanation of difference between static}
+\todo{Make example}

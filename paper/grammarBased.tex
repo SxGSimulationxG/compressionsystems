@@ -1,0 +1,16 @@
+\subsection{Grammatikbasierte Codierung}
+Bei der grammatikbasierten Codierung (Englisch: Grammar Based Coding) verwenden wir das Konzept der formalen Sprachen und Grammatiken aus der Informatik, wobei eine Grammatik $G$ aus einer Liste der Terminale $T$ oder einem Alphabet $A$ oder $\Sigma$, einer Liste von Nicht-Terminale $N$, einer Liste von Produktionsregeln $P$ und einem Startknoten $s$ besteht\footnote{\cite{rueda2002advances} p.80-81: 2.6.6 Grammar-Based Coding}. Mit diesem higher-order System codieren wir nicht die Zeichenkette $x$ selbst, sondern die Grammatik $G_x$. Da die Grammatik nur die Zeichenkette $x$ konstruiert, wird sie als kontextfreie Grammatik bezeichnet\footnote{\cite{kieffer2000grammar} p.2-4: Introduction}.
+
+\begin{equation}
+	L(G_x)=\{x\}
+\end{equation}
+
+In diesem Zusammenhang besteht das Ziel darin, die kleinstmögliche kontextfreie Grammatik für eine bestimmte Zeichenfolge $x$ zu erstellen. Die Größe einer Grammatik $|G_x|$ entspricht der Anzahl der Symbole auf der rechten Seite der Produktionsregeln $P$. Dieses Problem wird als „Smallest Grammar Problem” (SGP) bezeichnet\footnote{\cite{charikar2005smallest} p.1-2: Introduction}. Das in \cite{charikar2005smallest} angegebene Beispiel lautet:
+
+\begin{equation}
+	P=\{<S> \to <B><B><A>,\\
+	<A> \to \text{a rose},\\
+	<B> \to <A> \text{ is }\}
+\end{equation}
+
+Hier ist $|G_x|=14$ die kleinste Grammatik, um die Zeichenfolge „a rose is a rose is a rose“ zu bilden.

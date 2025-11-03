@@ -1,0 +1,480 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{wordnikWords}{online}{}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{urlday}{23}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://raw.githubusercontent.com/wordnik/wordlist/refs/heads/main/wordlist-20210729.txt
+      \endverb
+      \verb{url}
+      \verb https://raw.githubusercontent.com/wordnik/wordlist/refs/heads/main/wordlist-20210729.txt
+      \endverb
+    \endentry
+    \entry{blelloch2001introduction}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=14a27cb3652854f74c4942f51299d35e}{%
+           family={Blelloch},
+           familyi={B\bibinitperiod},
+           given={Guy\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e1210587d8802622ead6925a2adea82}
+      \strng{fullhash}{2e1210587d8802622ead6925a2adea82}
+      \strng{fullhashraw}{2e1210587d8802622ead6925a2adea82}
+      \strng{bibnamehash}{2e1210587d8802622ead6925a2adea82}
+      \strng{authorbibnamehash}{2e1210587d8802622ead6925a2adea82}
+      \strng{authornamehash}{2e1210587d8802622ead6925a2adea82}
+      \strng{authorfullhash}{2e1210587d8802622ead6925a2adea82}
+      \strng{authorfullhashraw}{2e1210587d8802622ead6925a2adea82}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Science Department, Carnegie Mellon University}
+      \field{title}{Introduction to data compression}
+      \field{volume}{54}
+      \field{year}{2001}
+    \endentry
+    \entry{fanoTransmissionInformation}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=7ebe6094812aec1918c8c4f5a5fc9512}{%
+           family={Fano},
+           familyi={F\bibinitperiod},
+           given={Robert\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Massachusetts Institute of Technology, Research Laboratory of Electronics~…}%
+      }
+      \strng{namehash}{7ebe6094812aec1918c8c4f5a5fc9512}
+      \strng{fullhash}{7ebe6094812aec1918c8c4f5a5fc9512}
+      \strng{fullhashraw}{7ebe6094812aec1918c8c4f5a5fc9512}
+      \strng{bibnamehash}{7ebe6094812aec1918c8c4f5a5fc9512}
+      \strng{authorbibnamehash}{7ebe6094812aec1918c8c4f5a5fc9512}
+      \strng{authornamehash}{7ebe6094812aec1918c8c4f5a5fc9512}
+      \strng{authorfullhash}{7ebe6094812aec1918c8c4f5a5fc9512}
+      \strng{authorfullhashraw}{7ebe6094812aec1918c8c4f5a5fc9512}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The transmission of information}
+      \field{volume}{65}
+      \field{year}{1949}
+    \endentry
+    \entry{gallager2003variations}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=f15b1beaef2d834ec61d280221a0269a}{%
+           family={Gallager},
+           familyi={G\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f15b1beaef2d834ec61d280221a0269a}
+      \strng{fullhash}{f15b1beaef2d834ec61d280221a0269a}
+      \strng{fullhashraw}{f15b1beaef2d834ec61d280221a0269a}
+      \strng{bibnamehash}{f15b1beaef2d834ec61d280221a0269a}
+      \strng{authorbibnamehash}{f15b1beaef2d834ec61d280221a0269a}
+      \strng{authornamehash}{f15b1beaef2d834ec61d280221a0269a}
+      \strng{authorfullhash}{f15b1beaef2d834ec61d280221a0269a}
+      \strng{authorfullhashraw}{f15b1beaef2d834ec61d280221a0269a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{number}{6}
+      \field{title}{Variations on a theme by Huffman}
+      \field{volume}{24}
+      \field{year}{2003}
+      \field{pages}{668\bibrangedash 674}
+      \range{pages}{7}
+    \endentry
+    \entry{huffmanOriginal}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=778334e2716241a2c1dbc07898e1e989}{%
+           family={Huffman},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima A},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{778334e2716241a2c1dbc07898e1e989}
+      \strng{fullhash}{778334e2716241a2c1dbc07898e1e989}
+      \strng{fullhashraw}{778334e2716241a2c1dbc07898e1e989}
+      \strng{bibnamehash}{778334e2716241a2c1dbc07898e1e989}
+      \strng{authorbibnamehash}{778334e2716241a2c1dbc07898e1e989}
+      \strng{authornamehash}{778334e2716241a2c1dbc07898e1e989}
+      \strng{authorfullhash}{778334e2716241a2c1dbc07898e1e989}
+      \strng{authorfullhashraw}{778334e2716241a2c1dbc07898e1e989}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IRE}
+      \field{number}{9}
+      \field{title}{A method for the construction of minimum-redundancy codes}
+      \field{volume}{40}
+      \field{year}{1952}
+      \field{pages}{1098\bibrangedash 1101}
+      \range{pages}{4}
+    \endentry
+    \entry{iso646ascii7bit}{manual}{}{}
+      \list{organization}{2}{%
+        {The International Organization for Standardization}%
+        {The International Electrotechnical Commission}%
+      }
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{title}{ISO/IEC 646:1991 Information technology - ISO 7-bit coded character set for Information Interchange}
+      \field{year}{1991}
+    \endentry
+    \entry{cnssGlossary}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=bc6df18b4c851b5e8b215025a465cffc}{%
+           family={Joyce},
+           familyi={J\bibinitperiod},
+           given={Robert\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Fort Meade, MD, United States of America}%
+      }
+      \list{organization}{1}{%
+        {National Security Agency}%
+      }
+      \strng{namehash}{bc6df18b4c851b5e8b215025a465cffc}
+      \strng{fullhash}{bc6df18b4c851b5e8b215025a465cffc}
+      \strng{fullhashraw}{bc6df18b4c851b5e8b215025a465cffc}
+      \strng{bibnamehash}{bc6df18b4c851b5e8b215025a465cffc}
+      \strng{authorbibnamehash}{bc6df18b4c851b5e8b215025a465cffc}
+      \strng{authornamehash}{bc6df18b4c851b5e8b215025a465cffc}
+      \strng{authorfullhash}{bc6df18b4c851b5e8b215025a465cffc}
+      \strng{authorfullhashraw}{bc6df18b4c851b5e8b215025a465cffc}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Committee on National Security Systems Glossary}
+      \field{year}{2022}
+    \endentry
+    \entry{kieffer2000grammar}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c4cc2b56bed90e998c34235128120220}{%
+           family={Kieffer},
+           familyi={K\bibinitperiod},
+           given={John\bibnamedelima C},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=2b9549e7d83847c4da96a820fa9a522c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={En-Hui},
+           giveni={E\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{cf03fd420472b5189f8f5b289649edf8}
+      \strng{fullhash}{cf03fd420472b5189f8f5b289649edf8}
+      \strng{fullhashraw}{cf03fd420472b5189f8f5b289649edf8}
+      \strng{bibnamehash}{cf03fd420472b5189f8f5b289649edf8}
+      \strng{authorbibnamehash}{cf03fd420472b5189f8f5b289649edf8}
+      \strng{authornamehash}{cf03fd420472b5189f8f5b289649edf8}
+      \strng{authorfullhash}{cf03fd420472b5189f8f5b289649edf8}
+      \strng{authorfullhashraw}{cf03fd420472b5189f8f5b289649edf8}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{number}{3}
+      \field{title}{Grammar-based codes: A new class of universal lossless source codes}
+      \field{volume}{46}
+      \field{year}{2000}
+      \field{pages}{737\bibrangedash 754}
+      \range{pages}{18}
+    \endentry
+    \entry{knuthDynamicHuffman}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ec08e6f01da5f3814f28a70c89c64656}{%
+           family={Knuth},
+           familyi={K\bibinitperiod},
+           given={Donald\bibnamedelima E},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{fullhash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{fullhashraw}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{bibnamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authorbibnamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authornamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authorfullhash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authorfullhashraw}{ec08e6f01da5f3814f28a70c89c64656}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of algorithms}
+      \field{number}{2}
+      \field{title}{Dynamic Huffman Coding}
+      \field{volume}{6}
+      \field{year}{1985}
+      \field{pages}{163\bibrangedash 180}
+      \range{pages}{18}
+    \endentry
+    \entry{mackenzie1980coded}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=e400185406df04442e8fbe072c79e935}{%
+           family={Mackenzie},
+           familyi={M\bibinitperiod},
+           given={Charles\bibnamedelima E},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Longman Publishing Co., Inc.}%
+      }
+      \strng{namehash}{e400185406df04442e8fbe072c79e935}
+      \strng{fullhash}{e400185406df04442e8fbe072c79e935}
+      \strng{fullhashraw}{e400185406df04442e8fbe072c79e935}
+      \strng{bibnamehash}{e400185406df04442e8fbe072c79e935}
+      \strng{authorbibnamehash}{e400185406df04442e8fbe072c79e935}
+      \strng{authornamehash}{e400185406df04442e8fbe072c79e935}
+      \strng{authorfullhash}{e400185406df04442e8fbe072c79e935}
+      \strng{authorfullhashraw}{e400185406df04442e8fbe072c79e935}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Coded-Character Sets: History and Development}
+      \field{year}{1980}
+    \endentry
+    \entry{rueda2006fast}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=38a78218a5c9b07a3e9a6c0c5e5cbf21}{%
+           family={Rueda},
+           familyi={R\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=53a19788fbac2f88302cc953e5d76d5b}{%
+           family={Oommen},
+           familyi={O\bibinitperiod},
+           given={B\bibnamedelima John},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{b8b558616024310d8eec1b6300c178eb}
+      \strng{fullhash}{b8b558616024310d8eec1b6300c178eb}
+      \strng{fullhashraw}{b8b558616024310d8eec1b6300c178eb}
+      \strng{bibnamehash}{b8b558616024310d8eec1b6300c178eb}
+      \strng{authorbibnamehash}{b8b558616024310d8eec1b6300c178eb}
+      \strng{authornamehash}{b8b558616024310d8eec1b6300c178eb}
+      \strng{authorfullhash}{b8b558616024310d8eec1b6300c178eb}
+      \strng{authorfullhashraw}{b8b558616024310d8eec1b6300c178eb}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information Sciences}
+      \field{number}{12}
+      \field{title}{A fast and efficient nearly-optimal adaptive Fano coding scheme}
+      \field{volume}{176}
+      \field{year}{2006}
+      \field{pages}{1656\bibrangedash 1683}
+      \range{pages}{28}
+    \endentry
+    \entry{rueda2002advances}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=56d6ddb9dbda0857abe1ae1be1647e4b}{%
+           family={Rueda},
+           familyi={R\bibinitperiod},
+           given={Luis\bibnamedelima Gabriel},
+           giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Carleton University}%
+      }
+      \strng{namehash}{56d6ddb9dbda0857abe1ae1be1647e4b}
+      \strng{fullhash}{56d6ddb9dbda0857abe1ae1be1647e4b}
+      \strng{fullhashraw}{56d6ddb9dbda0857abe1ae1be1647e4b}
+      \strng{bibnamehash}{56d6ddb9dbda0857abe1ae1be1647e4b}
+      \strng{authorbibnamehash}{56d6ddb9dbda0857abe1ae1be1647e4b}
+      \strng{authornamehash}{56d6ddb9dbda0857abe1ae1be1647e4b}
+      \strng{authorfullhash}{56d6ddb9dbda0857abe1ae1be1647e4b}
+      \strng{authorfullhashraw}{56d6ddb9dbda0857abe1ae1be1647e4b}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Advances in data compression and pattern recognition}
+      \field{type}{phdthesis}
+      \field{year}{2002}
+    \endentry
+    \entry{shakespeareCompleteWorks}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=878e036d3885377ad13d3702d171ce1f}{%
+           family={Shakespeare},
+           familyi={S\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Project Gutenberg}%
+      }
+      \strng{namehash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{fullhash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{fullhashraw}{878e036d3885377ad13d3702d171ce1f}
+      \strng{bibnamehash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{authorbibnamehash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{authornamehash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{authorfullhash}{878e036d3885377ad13d3702d171ce1f}
+      \strng{authorfullhashraw}{878e036d3885377ad13d3702d171ce1f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Complete Works of William Shakespeare}
+      \field{year}{1994}
+    \endentry
+    \entry{shannonMathematicalCommunication}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e930d560748b00dab7e3d19806c848ba}{%
+           family={Shannon},
+           familyi={S\bibinitperiod},
+           given={Claude\bibnamedelima Elwood},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nokia Bell Labs}%
+      }
+      \strng{namehash}{e930d560748b00dab7e3d19806c848ba}
+      \strng{fullhash}{e930d560748b00dab7e3d19806c848ba}
+      \strng{fullhashraw}{e930d560748b00dab7e3d19806c848ba}
+      \strng{bibnamehash}{e930d560748b00dab7e3d19806c848ba}
+      \strng{authorbibnamehash}{e930d560748b00dab7e3d19806c848ba}
+      \strng{authornamehash}{e930d560748b00dab7e3d19806c848ba}
+      \strng{authorfullhash}{e930d560748b00dab7e3d19806c848ba}
+      \strng{authorfullhashraw}{e930d560748b00dab7e3d19806c848ba}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Bell system technical journal}
+      \field{number}{3}
+      \field{title}{A mathematical theory of communication}
+      \field{volume}{27}
+      \field{year}{1948}
+      \field{pages}{379\bibrangedash 423}
+      \range{pages}{45}
+    \endentry
+    \entry{polybiusHistories}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c54a5d7ae2efa857248a18c97b7d5344}{%
+           family={Shuckburgh},
+           familyi={S\bibinitperiod},
+           given={Evelyn\bibnamedelima S},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {MacMillan}%
+        {Co.}%
+      }
+      \strng{namehash}{c54a5d7ae2efa857248a18c97b7d5344}
+      \strng{fullhash}{c54a5d7ae2efa857248a18c97b7d5344}
+      \strng{fullhashraw}{c54a5d7ae2efa857248a18c97b7d5344}
+      \strng{bibnamehash}{c54a5d7ae2efa857248a18c97b7d5344}
+      \strng{authorbibnamehash}{c54a5d7ae2efa857248a18c97b7d5344}
+      \strng{authornamehash}{c54a5d7ae2efa857248a18c97b7d5344}
+      \strng{authorfullhash}{c54a5d7ae2efa857248a18c97b7d5344}
+      \strng{authorfullhashraw}{c54a5d7ae2efa857248a18c97b7d5344}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Histories of Polybius}
+      \field{volume}{2}
+      \field{year}{1889}
+    \endentry
+    \entry{unicode170}{manual}{}{}
+      \list{location}{1}{%
+        {San Francisco, CA, United States of America}%
+      }
+      \list{organization}{1}{%
+        {The Unicode Consortium}%
+      }
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{title}{The Unicode Standard, Version 17.0}
+      \field{year}{2025}
+    \endentry
+    \entry{vitter1987design}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5aa5015622fecd1a862640fdaf0f665d}{%
+           family={Vitter},
+           familyi={V\bibinitperiod},
+           given={Jeffrey\bibnamedelima Scott},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{5aa5015622fecd1a862640fdaf0f665d}
+      \strng{fullhash}{5aa5015622fecd1a862640fdaf0f665d}
+      \strng{fullhashraw}{5aa5015622fecd1a862640fdaf0f665d}
+      \strng{bibnamehash}{5aa5015622fecd1a862640fdaf0f665d}
+      \strng{authorbibnamehash}{5aa5015622fecd1a862640fdaf0f665d}
+      \strng{authornamehash}{5aa5015622fecd1a862640fdaf0f665d}
+      \strng{authorfullhash}{5aa5015622fecd1a862640fdaf0f665d}
+      \strng{authorfullhashraw}{5aa5015622fecd1a862640fdaf0f665d}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the ACM (JACM)}
+      \field{number}{4}
+      \field{title}{Design and analysis of dynamic Huffman codes}
+      \field{volume}{34}
+      \field{year}{1987}
+      \field{pages}{825\bibrangedash 845}
+      \range{pages}{21}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

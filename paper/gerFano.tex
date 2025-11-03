@@ -1,0 +1,41 @@
+\subsection{Fano Codierung}
+Die Fano-Kodierungsmethode basiert wie die Shannon-Kodierungsmethode auf einem Top-Down-Konstruktionssystem. Die Fano-Methode beginnt mit einem Sequenzcode $\mathcal{S}$, der nach absteigender Wahrscheinlichkeit in $\mathcal{P}$ sortiert ist. Im binären System teilen wir diese Liste dann in zwei Untergruppen mit ungefähr gleicher Wahrscheinlichkeit $\mathcal{S}_0$ und $\mathcal{S}_1$ und damit auch $\mathcal{P}_0$ und $\mathcal{P}_1$. Ihre Codes beginnen dann entweder mit 0 oder 1. Dieser Vorgang wird dann so lange wiederholt, bis die Unterteilungen den einzelnen Zeichen entsprechen. Hier ist die Codewortlänge gleich $\log_2 m$, wenn $m$ eine Potenz von zwei ist. Wenn $m$ keine Zweierpotenz ist, ist die Länge des Codeworts eine der beiden ganzen Zahlen, die $\log_2 m$ am nächsten kommen\footnote{\cite{fanoTransmissionInformation} p.5-6: Selection from N Equally Likely Choices; \cite{rueda2002advances} p.55: Algorithm 3 Static Fano Encoding}.
+
+\subsubsection{Beispiel: Statisches Fano Kodierung}
+\begin{itemize}
+	\item $\mathcal{S}=\{a,b,c,d,e,f,g,h\}$
+	\item $\mathcal{P}=\{0.22,0.20,0.18,0.15,0.10,0.08,0.05,0.02\}$
+	\item $\mathcal{A}=\{0,1\} \to r=2$
+\end{itemize}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{c|c|c|c}
+		$s_i$ & $p_i$ & $L_i$ & Code \\
+		a & 0.22 &  &  \\
+		b & 0.20 &  &  \\
+		c & 0.18 &  &  \\
+		d & 0.15 &  &  \\
+		e & 0.10 &  &  \\
+		f & 0.08 &  &  \\
+		g & 0.05 &  &  \\
+		h & 0.02 &  &  \\
+	\end{tabular}
+	\caption{Angepasst aus Beispiel von \cite{huffmanOriginal} p.1101: Table III}
+	\label{tab:placeholder}
+\end{table}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1.1\linewidth]{fanoTree}
+	\caption{Fano Baum von Tabelle 2; Mit Manim Community v0.19.0 gemacht}
+	\label{fig:fanotree}
+\end{figure}
+
+\newpage
+
+\subsubsection{Adaptive Fano Codierung}
+Luis Rueda schlägt zwei verschiedene Möglichkeiten vor, um ein adaptives Fano-Kodierungssystem zu erstellen: die sogenannte Brute-Force-Methode und die sogenannte Greedy-Methode. Bei der Brute-Force-Methode berechnet das System bei jeder Änderung des Zeichenzählers den entsprechenden Kompressionsbaum neu\footnote{\cite{rueda2006fast} p.1659-1660: 2.1 A brute-force method for adaptive Fano coding}. Dies ist natürlich ziemlich ineffizient, aber funktioniert immer um einen statisches in ein adaptives Kompressionssystem zu wandeln. 
+Bei der Greedy-Methode beginnen wir mit einer Liste des Eingabealphabets und initialisieren die Wahrscheinlichkeiten jedes Zeichens als gleich. Immer wenn ein Zeichen codiert wird, wird ein bestimmtes Partitionierungsverfahren aufgerufen, das das Codewort ausgibt. Je nach verwendetem Codealphabet können verschiedene Partitionierungsverfahren zum Einsatz kommen. Der Einfachheit halber sagen wir einfach, dass dieses System die Wahrscheinlichkeiten auf die eine oder andere Weise optimal partitioniert, aber weitere Informationen zu verschiedenen Partitionierungsverfahren finden Sie in \cite{rueda2006fast}. Das Ergebnis ist jedoch, dass wir bei der Codierung eines Zeichens in unserer Eingabesequenz nicht mehr unseren Komprimierungsbaum für jedes neue Eingabezeichen aktualisieren müssen. Es werden nur die Änderungen im Gewicht eines bestimmten Zeichens berücksichtigt und alle erforderlichen Änderungen im aktuellen Kodierungsschema\footnote{\cite{rueda2006fast} p.1660: 2.2 The greedy encoding algorithm}.
+
+\todo{Beispiel}

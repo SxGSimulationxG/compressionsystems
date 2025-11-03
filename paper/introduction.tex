@@ -1,0 +1,62 @@
+\section{Introduction}
+
+Lossless data compression systems have a massive importance to our modern lives. Without these systems we couldn't have managed to reach this level of the technological era. As the name says, these are systems to reduce the amount of storage data takes up without loosing any information in the process, i.e. lossless. The foundation of lossless data compression systems are Huffman, Shannon, and Fano coding systems but since these systems were introduced there have been many improvements and different approaches to this problem of lossless data compression. 
+
+\subsection{Aims}
+In this paper we will firstly discuss the history of data compression leading up to the invention of the fundamental lossless compression systems and we will then go through these systems, going through how they work and how they differ from each other. We will then go into the difference between their static and adaptive counterparts before briefly looking at how these systems were improved upon and how they are used in the modern day. Afterwards we will compare the fundamental lossless compression systems using example data with a java comparison system to find out by how much these systems differ and if there are certain biases with the data examples.
+
+\subsection{Theoretical Basis}
+The purpose of this section is as a reference during the reading of the rest of the paper for any base concepts.
+
+\subsubsection{Lossless vs. Lossy Compression Systems}
+Lossless compression systems are a method of compression in which the original uncompressed form can be reconstructed to it's original quality. In comparison lossy compression is a system where less relevant information is disregarded to compress the size\footnote{\cite{blelloch2001introduction} p.40-41: 7 Lossy Compression Techniques}. In this paper we will only be looking at lossless compression systems.
+
+\subsubsection{Variable vs. Fixed Length Coding}
+Fixed length coding systems assign a certain amount of bits per character, each character being the same length. This makes it easier to search for a specific position of a character through simple multiplication, i.e. if you were looking for the 10th character in an 8-bit fixed length coding system you would look from bit 81 to 88. Variable length coding systems however, as the name tells us, the character length vary. This is then helpful when we want to compress data so we can assign shorter codes to more common characters\footnote{\cite{vitter1987design} p.825-827: 1 Introduction}.
+
+\subsubsection{Information Entropy}
+Information entropy describes the relation between the probabilities of the input sequence and the length of the code word. For the most optimal lossless compression system, the average code word length is equal to the value of the information entropy. This concept was one of the most important in Shannon's foundation of information theory\footnote{\cite{shannonMathematicalCommunication} p.396-399: 7 The Entropy of an Information Source}. The moment when the average code word length goes below the value of the entropy $H$, information must be lost, so the compression system is no longer lossless.
+
+\begin{equation}
+	H=-\sum p_i \log(p_i)
+\end{equation}
+
+This equation is valid when the characters are independent of each other.
+
+\subsubsection{Higher-order vs. Zeroth-order Systems}
+In a zeroth-order system, each character is encoded independently, any correlation between the characters in the input sequence aren't taken into account. A higher-order system has the ability to observe and utilize patterns across multiple characters.
+
+\subsubsection{Static vs. Adaptive Coding Systems}
+In a static coding system, we have knowledge about the probabilities of the source sequence before encoding the sequence. In an adaptive system the only input the encoder has is the source sequence itself. The system then adapts the encoding scheme with changes in the frequency of the input characters\footnote{\cite{rueda2002advances} p.60-61: 2.5 Adaptive Coding}.
+
+\subsubsection{Dictionary Based Coding}
+Storer and Szymanski in their paper "Data Compression via Textual Substitution" lay a foundation of dictionary based data compression. Their system adds several components: external macro schemes, internal macro schemes, a dictionary, and a skeleton. The external macro scheme allows a source string to be encoded using a dictionary, a storage of reference strings, and a skeleton, a combination of characters of the input alphabet and pointers to the dictionary. The internal macro schemes allow pointers to duplicate sections of the same string\footnote{\cite{storer1982data} p.929-932: 2 The Model and Basic Definitions}. With this system we can decrees the amount of redundancy in our input sequence. 
+
+\subsubsection{Dynamic Markov Compression}
+
+\subsubsection{Block Sorting Compression}
+
+\subsubsection{Grammar Based Coding}
+In grammar based coding, we use the concept of languages and grammars in computer science, a grammar $G$ being made out of a list of terminals $T$ or an alphabet $\Sigma$, a list of non-terminals $N$, a list of production rules $P$, and a start node $s$. With this higher-order system instead of encoding the string $x$ itself, we encode the grammar $G_x$. Due to the fact that the grammar only constructs the string x, it is called a context-free grammar\footnote{\cite{kieffer2000grammar} p.2-4: Introduction}.
+
+\begin{equation}
+	L(G_x)=\{x\}
+\end{equation}
+
+In this context, the aim is to make the smallest possible context-free grammar for a certain string $x$. The size of a grammar $|G_x|$ being the amount of symbols on the right side of the production rules $P$. This problem in question is called the "Smallest Grammar Problem" (SGP)\footnote{\cite{charikar2005smallest} p.1-2: Introduction}. The example given in \cite{charikar2005smallest} being:
+
+\begin{equation}
+	P=\{<S> \to <B><B><A>,\\
+	<A> \to \text{a rose},\\
+	<B> \to <A> \text{ is }\}
+\end{equation}
+
+Here $|G_x|=14$ being the smallest grammar for making the string "a rose is a rose is a rose".
+
+\subsubsection{Prediction with Partial Matching}
+
+\subsubsection{Burrows-Wheeler Transform}
+
+\subsubsection{Context Tree Weighting}
+
+\subsubsection{Multilevel Pattern Matching}

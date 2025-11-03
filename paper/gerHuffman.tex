@@ -1,0 +1,57 @@
+\subsection{Huffman Codierung}
+In Huffmans System beginnen wir mit einem Sequenzcode $\mathcal{S}$, der nach absteigender Wahrscheinlichkeit sortiert ist, und weisen jedem dieser Zeichen einen Knoten in $\mathcal{Q}$ zu.
+
+\begin{equation}
+	p_i\geq p_{i+1}\geq \dots \geq p_m
+\end{equation}
+\begin{equation}
+	q_i \leftarrow s_i, (\tau_i= p_i)
+\end{equation}
+
+Wir nehmen dann maximal $r$, mindestens jedoch 2 Zeichen mit der geringsten Wahrscheinlichkeit, verbinden sie mit einem neuen Knoten und fügen diesen neuen Knoten wieder in die richtige Position entsprechend seinem Gewicht in das Array $\mathcal{Q}$ ein.
+
+\begin{equation}
+	q_{new}\leftarrow {q_{new}}_j, \tau_{new}=\sum^j_{i=1}\tau_i
+\end{equation}
+
+Man kann diesen Vorgang wiederholen, bis $\tau_{new}=1$ ist. Am Ende kann man den Kompressionsbaum visualisieren, indem man die Kinder jedes Knotens nachverfolgen, bis man die Quellzeichen erreicht\footnote{\cite{huffmanOriginal} p.1011: Generalization of the Method; \cite{rueda2002advances} p.50: Algorithm 1 Static Huffman Encoding}.
+
+\subsubsection{Beispiel: Statisches Huffman Codierung}
+
+Eingabe:
+\begin{itemize}
+	\item $\mathcal{S}=\{a,b,c,d,e,f,g,h\}$
+	\item $\mathcal{P}=\{0.22,0.20,0.18,0.15,0.10,0.08,0.05,0.02\}$
+	\item $\mathcal{A}=\{0,1,2,3\}$
+\end{itemize}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{cccc}
+		$s_i$ & $p_i$ & $L_i$ & Code \\
+		a & 0.22 & 1 & 1 \\
+		b & 0.20 & 1 & 2 \\
+		c & 0.18 & 1 & 3 \\
+		d & 0.15 & 2 & 00 \\
+		e & 0.10 & 2 & 01 \\
+		f & 0.08 & 2 & 02 \\
+		g & 0.05 & 3 & 030 \\
+		h & 0.02 & 3 & 031 \\
+	\end{tabular}
+	\caption{Beispiel von \cite{huffmanOriginal} p.1101: Table III}
+	\label{tab:placeholder}
+\end{table}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1.1\linewidth]{huffmanTree}
+	\caption{Huffman Baum von Tabelle 3; Mit Manim Community v0.19.0 gemacht}
+	\label{fig:huffmantree}
+\end{figure}
+
+In Abbildung 2 stellen die grünen Knoten die einzelnen Zeichen mit ihren entsprechenden Wahrscheinlichkeiten $p$ dar, während die violetten Knoten die Verbindungsknoten $q$ mit ihrem entsprechenden Gewicht $\tau$ darstellen. Bei der Kodierung und Dekodierung verwenden wir diesen Baum als Übersetzungshilfe, wobei der am weitesten links stehende Knoten 0 ist, dann 1 usw.
+
+\newpage
+
+\subsubsection{Adaptive Huffman Codierung}
+Die adaptive Huffman-Kodierung oder dynamische Huffman-Kodierung ist im Vergleich zur statischen Version ein System, das die Konstruktion des Huffman-Baums an Änderungen in der Anzahl der Zeichen anpasst, anstatt eine vorsortierte Liste mit vorgegebenen Wahrscheinlichkeiten zu verwenden. Diese von Robert G. Gallager vorgeschlagene Theorie basiert auf der Geschwister-Eigenschaft (Englisch: sibling property), wonach der Code für die aktuelle Zeichenanzahl optimal ist, wenn die Knoten in absteigender Reihenfolge aufgelistet werden können und jeder Knoten an seinen Geschwisterknoten angrenzt\footnote{\cite{gallager2003variations} p.6: 2. The Sibling Property Definition}. In einem binären System enthält jeder Knoten oder jedes Geschwisterpaar 5 verschiedene Komponenten. Zwei sind die aktuellen Zähler der untergeordneten Knoten, zwei sind Verknüpfungen zu den untergeordneten Knoten und die letzte ist eine Verknüpfung zum übergeordneten Knoten. Jede der Verknüpfungen verfügt außerdem über eine zusätzliche Eigenschaft, die angibt, ob es sich um den 0. oder den 1. untergeordneten Knoten handelt. Als Eingabe für unser adaptives System haben wir den Huffman-Baum eines um eins reduzierten gelesenen Zeichens und des nächsten Zeichens. Die Ausgabe ist dann der Huffman-Baum mit der aktualisierten Zählung. Wenn mit der Erhöhung der Zeichenanzahl festgestellt wird, dass die Anzahl die Anzahl des nächsthöheren Geschwisterpaares überschreitet, werden diese beiden Knoten vertauscht, wodurch sich der Code und der resultierende Huffman-Baum ändern\footnote{\cite{gallager2003variations} p.17-21: Adaptive Huffman Codes}. Dieser Algorithmus wurde dann von Donald E. Knuth in seiner Arbeit über dynamische Huffman-Kodierung weiterentwickelt. Hier füllt er einige Lücken, die Gallagers adaptives System hinterlassen hat, wie z. B. die Verringerung der Zeichenanzahl\footnote{\cite{knuthDynamicHuffman} p.163-165: Introduction}.

@@ -1,0 +1,72 @@
+% Deckblatt für Seminararbeit (inputfähig)
+% Eingebunden mit: \input{deckblatt_seminararbeit_input.tex}
+
+% --- Lokale Einstellungen ---
+
+\newcommand{\Fline}[1][8cm]{\rule{#1}{0.4pt}}
+\newcommand{\Label}[1]{\textbf{#1}}
+
+% --- Variablen (vom Hauptdokument befüllbar) ---
+\providecommand{\Schule}{Friedrich-Koenig-Gymnasium Würzburg}
+\providecommand{\Jahrgang}{Oberstufenjahrgang 2024/2026}
+\providecommand{\Seminartyp}{W-Seminar}
+\providecommand{\Fach}{Mathematik}
+\providecommand{\Thema}{Quellenkodierung I - Huffman-/Shannon-Fano-Kodierung}
+\providecommand{\Verfasser}{Kai Rasmussen}
+\providecommand{\Kursleiter}{Oliver Manger}
+\providecommand{\SpaetestAbgabe}{Di., 11.11.2025}
+\providecommand{\AbgabeTagOS}{}
+\providecommand{\OrtDatum}{}
+\providecommand{\Seminar}{}
+\providecommand{\NameVorname}{}
+\providecommand{\KursleiterAmt}{}
+
+% --- Deckblatt ---
+\begin{center}
+	{\textbf{\Schule}}
+	{\textbf{\Jahrgang}}\\[14mm]
+	{\Large \textbf{SEMINARARBEIT}}\\[4mm]
+	{\large \underline{im \Seminartyp}}\\[5mm]
+	{\Large WM Kryptologie}\\[5mm]
+	\textbf{im Fach}\\[2mm]
+	Mathematik
+\end{center}
+
+\Label{Thema:}
+\begin{center}
+	\large \Thema\\[8mm]
+\end{center}
+
+
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{50mm}X@{}}
+	\Label{Verfasser / -in:} & \Verfasser\\[4mm]
+	\Label{Kursleiter / -in:} & \Kursleiter\\[8mm]
+	\Label{spät. Abgabetermin:} & \SpaetestAbgabe\\[4mm]
+	\Label{Tag der Abgabe im OS-Büro:} & \Fline[3cm]\\
+\end{tabularx}
+
+\vfill
+
+\begin{tcolorbox}[colback=white,colframe=black,width=\textwidth,
+	boxrule=0.5pt,arc=1mm,outer arc=0pt, left=5mm, right=5mm, top=2mm, bottom=2mm]
+	\renewcommand{\arraystretch}{1.8}
+	
+	\begin{tabular}{@{}>{\bfseries}ll@{}}
+		Bewertung: &  \fbox{\rule{2cm}{0pt}\rule[-3pt]{0pt}{12pt}} \ Punkte für die W-Seminararbeit \\
+		& \small (einfache Wertung, Ergebnis liegt zwischen 0 und 15 Punkten) \\[1ex]
+		& \fbox{\rule{2cm}{0pt}\rule[-3pt]{0pt}{12pt}} \ Punkte für die Präsentation \\[3ex]
+		Gesamtnote: &
+		\fbox{\rule{2cm}{0pt}\rule[-3pt]{0pt}{12pt}} \ Punkte \\[0.5ex]
+		& \small (Arbeit dreifach gewertet, Präsentation einfach gewertet, Summe geteilt\\ 
+		& \small durch 2, Ergebnis gerundet; Gesamtergebnis liegt zwischen\\ 
+		& \small 0 und 30 Punkten)
+	\end{tabular}
+\end{tcolorbox}
+
+\vfill
+
+\begin{flushleft}	
+	Besprochen am: \Fline[4cm]\\[10mm]
+	\hfill \Fline[10cm]\\[-1mm]
+	\hfill \small Unterschrift der Kursleiterin / des Kursleiters
+\end{flushleft}

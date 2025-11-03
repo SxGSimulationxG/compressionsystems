@@ -1,0 +1,105 @@
+\subsubsection{Java Code: Surrounding System}
+\begin{lstlisting}[language=java]
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class Index {
+	static char[] charArray;
+	public static void main(String[] args) {
+		String filePath = "input.txt";
+		
+		try {
+			String content = new String(Files.readAllBytes(Paths.get(filePath)));
+			charArray = content.toCharArray();
+		}
+		catch (IOException e) {
+			System.out.println("Error reading file: " + e.getMessage());
+		}
+		
+		HuffmanStatic huffmanStatic = new HuffmanStatic(charArray);
+		
+		HuffmanAdaptive huffmanAdaptive = new HuffmanAdaptive(charArray);
+		
+		ShannonStatic shannonStatic = new ShannonStatic(charArray);
+		
+		ShannonAdaptive shannonAdaptive = new ShannonAdaptive(charArray);
+		
+		FanoStatic fanoStatic = new FanoStatic(charArray);
+		
+		FanoAdaptive fanoAdaptive = new FanoAdaptive(charArray);
+		
+		FanoStaticPlus fanoStaticPlus = new FanoStaticPlus(charArray);
+	}
+}
+\end{lstlisting}
+
+\subsubsection{Java Code: Compression System (Abstract)}
+\begin{lstlisting}[language=java]
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public abstract class CompressionSystem {
+	char[] input;
+	char[] sequence;
+	int[] frequency;
+	double[] prob;
+	char[] encodingScheme;
+	double avgLength;
+	int processes;
+	
+	public abstract int getProcesses();
+	public abstract char[] getEncodingScheme();
+	
+	public Object[] analyzeCharacters(char[] input) {
+		Map<Character, Integer> frequencyMap = new LinkedHashMap<>();
+		
+		for (char c : input) {
+			frequencyMap.put(c, frequencyMap.getOrDefault(c, 0) + 1);
+		}
+		
+		char[] uniqueChars = new char[frequencyMap.size()];
+		int[] frequencies = new int[frequencyMap.size()];
+		
+		int i = 0;
+		for (Map.Entry<Character, Integer> entry : frequencyMap.entrySet()) {
+			uniqueChars[i] = entry.getKey();
+			frequencies[i] = entry.getValue();
+			i++;
+		}
+		
+		return new Object[]{uniqueChars, frequencies};
+	}
+}
+\end{lstlisting}
+
+\subsubsection{Java Code: Static Huffman Coding}
+\begin{lstlisting}
+public class HuffmanStatic extends CompressionSystem {
+	public HuffmanStatic(char[] inputArray) {
+		input = inputArray;
+		Object[] analysis = analyzeCharacters(input);
+		sequence = (char[]) analysis[0];
+		frequency = (int[]) analysis[1];
+	}
+	
+	@Override
+	public int getProcesses() {
+		return processes;
+	}
+	
+	@Override
+	public char[] getEncodingScheme() {
+		return encodingScheme;
+	}
+}
+\end{lstlisting}
+
+\subsubsection{Java Code: Adaptive Huffman Coding}
+\subsubsection{Java Code: LZ77}
+\subsubsection{Java Code: Deflate Algorithm}
+\subsubsection{Java Code: Static Shannon Coding}
+\subsubsection{Java Code: Adaptive Shannon Coding}
+\subsubsection{Java Code: Static Fano Coding}
+\subsubsection{Java Code: Adaptive Fano Coding}
+\subsubsection{Java Code: Fano$^+$ - Enhanced Static Fano Coding}

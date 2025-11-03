@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Aims}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Theoretical Basis}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Lossless vs. Lossy Compression Systems}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Variable vs. Fixed Length Coding}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Information Entropy}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.4}Higher-order vs. Zeroth-order Systems}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.5}Dictionary Based Coding}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.6}Dynamic Markov Compression}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.7}Block Sorting Compression}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.8}Grammar Based Coding}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.9}Prediction with Partial Matching}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.10}Burrows-Wheeler Transform}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.11}Context Tree Weighting}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.12}Multilevel Pattern Matching}{3}{}%
+\contentsline {section}{\numberline {2}History of Data Compression}{4}{}%
+\contentsline {section}{\numberline {3}Compression Systems}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Huffman Coding}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Example: Static Huffman Coding}{6}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Adaptive Huffman Coding}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Shannon Coding}{7}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Example: Static Shannon Coding}{7}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Adaptive Shannon Coding}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Fano Coding}{8}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Adaptive Fano Coding}{8}{}%
+\contentsline {subsection}{\numberline {3.4}Further Improvements}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Lempel-Ziv Algorithm}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Deflate Algorithm}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Lempel-Ziv-Welch Algorithm}{8}{}%
+\contentsline {subsection}{\numberline {3.5}Comparison System}{8}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Surrounding System}{8}{}%
+\contentsline {subsection}{\numberline {3.6}Results}{9}{}%
+\contentsline {section}{\numberline {4}Conclusion}{9}{}%
+\contentsline {subsection}{\numberline {4.1}Acknowledgements}{10}{}%

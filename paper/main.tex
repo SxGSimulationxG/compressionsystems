@@ -1,0 +1,90 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{listings}
+\lstset{breaklines=true}
+\usepackage{todonotes}
+\usepackage{biblatex}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\setlength{\marginparwidth}{2cm}
+\addbibresource{main.bib}
+
+% --- Grafiken & Bilder ---
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{float}
+
+% --- Tabellen ---
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{setspace} 	% zum Zeilenabstand setzen
+\usepackage{marvosym} 	%div. Symbole
+\usepackage{multicol} 	% analog s.o.
+\usepackage{booktabs} 	% dünne und dicke Striche bei Tabellen
+\usepackage{diagbox}
+\usepackage{tablefootnote}
+
+\usepackage{tabularx}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % linksbündig mit Breitenangabe
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % zentriert mit Breitenangabe
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % rechtsbündig mit Breitenangabe
+\newcommand{\ltab}{\raggedright\arraybackslash} % Tabellenabschnitt linksbündig
+\newcommand{\ctab}{\centering\arraybackslash} % Tabellenabschnitt zentriert
+\newcommand{\rtab}{\raggedleft\arraybackslash} % Tabellenabschnitt rechtsbündig
+
+\usepackage{hhline}
+\usepackage{colortbl}
+
+% \usepackage[table]{xcolor} % for \cellcolor
+
+% Optional color definitions
+\definecolor{hellgrau}{RGB}{230,230,230}
+\definecolor{grau}{RGB}{200,200,200}
+
+\addtolength{\footskip}{-4mm} % Seitenzahl vertikal verschieben.
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% Clear defaults
+\fancyhf{}
+
+% Header offset beyond the right margin (e.g., 1cm)
+\fancyheadoffset[R]{1.5cm}
+
+% Define header content (example)
+\fancyhead[L]{\nouppercase{\leftmark}}  % right-aligned section title
+\fancyhead[R]{\thepage}
+
+
+\begin{document}
+	
+	\newgeometry{left=2cm, right=2cm,}
+	\input{title.tex}
+	\restoregeometry
+	
+	\tableofcontents
+	\newpage
+	
+	\textbf{Abstract - The comparison between the original data compression algorithms, Huffman and Shannon-Fano Coding systems, as well as a deeper look into the different improvements to and applications of lossless compression algorithms.}\\
+	
+	Keywords: Huffman coding, Shannon coding, Fano coding, lossless data compression, static compression systems, adaptive compression systems, and higher-order models.
+	
+	\input{introduction.tex}
+	\input{history.tex}
+	\input{compressionsystems.tex}
+	\input{huffman.tex}
+	\input{shannon.tex}
+	\input{fano.tex}
+	\input{higherorder.tex}
+	\input{comparisonsystem.tex}
+	\input{surroundingsystem.tex}
+	\input{results.tex}
+	\input{conclusion.tex}
+	
+	\newpage
+	\printbibliography
+	
+\end{document}

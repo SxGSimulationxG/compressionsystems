@@ -1,0 +1,4 @@
+\subsection{Dictionary Based Kodierung}
+Storer und Szymanski legen in ihrer Arbeit „Data Compression via Textual Substitution” einen Grundstein für die dictionary-based Kompressionsverfahren. Ihr System füht mehrere Komponenten hinzu: externe Makroschemata, interne Makroschemata, ein Wörterbuch (dictionary) und ein Skelett. Das externe Makroschema ermöglicht die Kodierung einer Quellzeichenfolge unter Verwendung eines Wörterbuchs, eines Speichers für Referenzzeichenfolgen und eines Skeletts, einer Kombination aus Zeichen des Eingabealphabets und Zeigern auf das Wörterbuch. Die internen Makro-Schemata ermöglichen Zeigern auf wiederholte Abschnitte derselben Zeichenfolge\footnote{\cite{storer1982data} p.929-932: 2 The Model and Basic Definitions}. Mit diesem System können wir den Grad der Redundanz in unserer Eingabesequenz verringern.
+
+\todo{LZ77/Deflate}

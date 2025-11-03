@@ -1,0 +1,41 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{listings}
+\lstset{breaklines=true}
+\usepackage{todonotes}
+\usepackage{biblatex}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{tabularx, booktabs, array, setspace}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\setlength{\marginparwidth}{2cm}
+\addbibresource{main.bib}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{tcolorbox}
+\usepackage{array}
+\usepackage{tablefootnote}
+
+\begin{document}
+	\input{deckblattSeminararbeit.tex}
+	\newpage
+	\input{erklaerung.tex}
+	\newpage
+	\tableofcontents
+	\newpage
+	\input{einleitung.tex}
+	\newpage
+	\input{kompressionssysteme.tex}
+	\newpage
+	\input{gerHigherorder.tex}
+	%\input{gerCompSystem.tex}
+	%\input{gerSurroundingSystem.tex}
+	\newpage
+	\input{ergebnisse.tex}
+	\newpage
+	\input{gerConclusion.tex}
+	
+	\newpage
+	\printbibliography
+\end{document}

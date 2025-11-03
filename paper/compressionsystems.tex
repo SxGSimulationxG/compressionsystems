@@ -1,0 +1,48 @@
+\section{Compression Systems}
+In this paper, when explaining and comparing these systems, we will follow a specific notation and terminology in the creation of our compression tree. As the input for any compression system, we need an input sequence $\mathcal{S}$ which as an array of $m$ unique characters. Each of these characters will then, through the compression system, receive their own code. 
+\begin{equation}
+	\mathcal{S}=\{s_1 \to s_m\}
+\end{equation}
+
+Each of these characters in the input sequence has an attached probability. This probability can be calculated by dividing the amount of appearances of this character by the total amount of characters. These probabilities are also kept in an array $\mathcal{P}$.
+\begin{equation}
+	\mathcal{P}=\{p_1 \to p_m\}
+\end{equation}
+\begin{equation}
+	p=\frac{\textbf{Amount of appearances}}{\textbf{Total amount of characters}}
+\end{equation}
+
+For the compression system, we also need a code alphabet with which we want to compress our code, the simplest of which being the binary system with the code alphabet $\mathcal{A}=\{0,1\}$ where $r=2$. This tells us that each internal node in the tree has two children and only one sibling. For most of the examples, we will use this code alphabet for simplicity, but you should keep in mind that all of these systems can also work with larger code alphabets.
+\begin{equation}
+	\mathcal{A}=\{a_1 \to a_r\}
+\end{equation}
+
+The compression tree with which the message code is encoded and decoded is depicted with $\mathcal{C}$. Each of the nodes in the compression tree is listed in the array $\mathcal{Q}$ with $n$ being the total amount of nodes in the compression tree. 
+\begin{equation}
+	\mathcal{Q}=\{q_1 \to q_n\}
+\end{equation}
+
+Each node $q_i$ in the compression tree has a corresponding weight $\tau_i$, which can be calculated as the sum of the weights of the children $j$ of that node and is kept in an array $\mathcal{T}$. 
+\begin{equation}
+	\mathcal{T}=\{\tau_1 \to \tau_i\}
+\end{equation}
+\begin{equation}
+	\tau_{i}=\sum^j_{o=1}{\tau_o}
+\end{equation}
+
+After the encoding process using the compression tree $\mathcal{C}$, the result is an output sequence $\mathcal{Y}$ that is a concatenation of all the resulting code words with a length $L_\mathcal{Y}$. In addition, we will use the array $\mathcal{X}$ to list the resulting code words.
+\begin{equation}
+	\mathcal{X}=\{x_1 \to x_m\}
+\end{equation}
+
+The resulting encoding scheme that acts like a translation table between encoded and decoded codes is listed in $\phi$.
+\begin{equation}
+	\phi:s_1\to x_1,\dots, s_i \to x_i
+\end{equation}
+
+The average length of the code words in $\mathcal{X}$ is represented by $\overline{L}$.
+\begin{equation}
+	\overline{L}(\mathcal{X})=\sum^m_{i=1}L(x_i)
+\end{equation}
+
+The main objective of our compression systems is to assign the most frequent input sequence character $s_1$ to the shortest code word $x_1$, the ideal being that the average code word length $\overline{L}$ is as small as possible. This smallest possible average code word length is referred to as a minimum redundancy code, coined by David A. Huffman in his paper on the construction of just such a code under the conditions that: No two messages shall have the same resulting sequence $\mathcal{Y}$ and each code word shall be distinguishable without needing to specify the start or end of a code word.\footnote{\cite{huffmanOriginal} p.1098: Introduction}
