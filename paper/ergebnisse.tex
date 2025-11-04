@@ -2,10 +2,10 @@
 
 \begin{table}[h]
 	\centering
-	\begin{tabular}{cccc}
-		\textbf{Beispiel} & \textbf{ASCII-1965\tablefootnote{\cite{mackenzie1980coded} p.423-425: 23.2 ASCII-1965; also ISO/IEC 646: \cite{iso646ascii7bit} p.6-7: Table 1 (Berechnet: Anzahl der Zeichen multipliziert mit 7)}} & \textbf{USASCII-8\tablefootnote{\cite{mackenzie1980coded} p.431-433: 23.11 USASCII-8 (Berechnet: Anzahl der Zeichen multipliziert mit 8)}} & \textbf{UTF-32\tablefootnote{\cite{unicode170} p.77: 2.5.1 UTF-32 (Berechnet: Anzahl der Zeichen multipliziert mit 32)}} \\
-		Wordnik\tablefootnote{\cite{wordnikWords}: Wordnik Liste öffentlich zugänglicher englischer Wörter} & $16.57$ & $18.93$ & $75.74$ \\
-		Shakespeare\tablefootnote{\cite{shakespeareCompleteWorks}: Die gesammelten Werke von William Shakespeare} & -\tablefootnote{Die Datei aus Project Gutenberg enthält einige Formatierungszeichen, die nicht im Standard-ASCII-1965 enthalten sind.} & $43.03$ & $172.12$ \\
+	\begin{tabular}{ccc}
+		\textbf{Beispiel} & \textbf{Speicherbedarf}\tablefootnote{Berechnet Anzahl der Eingabezeichen multipliziert mit 8} & \textbf{Entropie $H$} \\
+		Wordnik\tablefootnote{\cite{wordnikWords}: Wordnik Liste öffentlich zugänglicher englischer Wörter} &  $20.5$ & $4.25$ \\
+		Shakespeare\tablefootnote{\cite{shakespeareCompleteWorks}: Die gesammelten Werke von William Shakespeare} & $44.6$ & $4.84$ \\
 	\end{tabular}
 	\caption{Liste mit Beispielen zum Vergleich der verschiedenen Kompressionssysteme mit ihrer entsprechenden Speichernutzung in Mb.}
 	\label{tab:placeholder}
@@ -14,10 +14,10 @@
 \begin{table}[h]
 	\centering
 	\begin{tabular}{c|c|c|c|c}
-		\textbf{Kompressionssystem} & \textbf{Prozesse\tablefootnote{Berechnungsprozesse sind relativ, verschiedene Arten von Prozessen dauern unterschiedlich lange, daher sollte diese Zahl eher vage interpretiert werden.}} & \textbf{Größe\tablefootnote{Speichernutzung nach Komprimierung ohne Berücksichtigung des Speicherplatzes, der vom Komprimierungsbaum oder Kodierungsschema belegt wird. Der Speicherplatz, den diese im Verhältnis zu einer größeren Datenmenge beanspruchen, ist so gering, dass wir diesen geringen zusätzlichen Speicherbedarf im Grunde ignorieren können.}} & \textbf{$\overline{L}$ Avg. L\tablefootnote{Durchschnittscodewortlänge}} & \textbf{Prozentsatz eingespart\tablefootnote{Prozentualer Anteil der komprimierten Speichergröße im Vergleich zum kleinsten arbeitenden Zeichensatz in Tabelle 2.}} \\
-		Huffman & $-$ & $-$ & $~-$ & $~-$ \\
-		Shannon & $-$ & $-$ & $~-$ & $~-$ \\
-		Fano & $-$ & $-$ & $~-$ & $~-$ \\
+		\textbf{Kompressionssystem} & \textbf{Prozesse\tablefootnote{Berechnungsprozesse sind relativ, verschiedene Arten von Prozessen dauern unterschiedlich lange, daher sollte diese Zahl eher vage interpretiert werden.}} & \textbf{Größe\tablefootnote{Speichernutzung nach Komprimierung ohne Berücksichtigung des Speicherplatzes, der vom Komprimierungsbaum oder Kodierungsschema belegt wird. Der Speicherplatz, den diese im Verhältnis zu einer größeren Datenmenge beanspruchen, ist so gering, dass wir diesen geringen zusätzlichen Speicherbedarf im Grunde ignorieren können.}} & \textbf{$\overline{L}$ Avg. L\tablefootnote{Durchschnittscodewortlänge}} & \textbf{Prozentsatz\tablefootnote{Prozentualer Anteil der komprimierten Speichergröße im Vergleich zum Zeichensatz in Tabelle 4.}} \\
+		Huffman & $2565462$ & $11.0$ & $4.29$ & $53.6\%$ \\
+		Shannon & $2565500$ & $12.0$ & $4.70$ & $58.7\%$ \\
+		Fano & $2565349$ & $11.4$ & $4.44$ & $55.5\%$ \\
 	\end{tabular}
 	\caption{Vergleich der verschiedenen Kompressionssysteme mit Wordnik}
 	\label{tab:placeholder}
@@ -26,10 +26,10 @@
 \begin{table}[h]
 	\centering
 	\begin{tabular}{c|c|c|c|c}
-		\textbf{Kompressionssystem} & \textbf{Prozesse} & \textbf{Größe} & \textbf{$\overline{L}$ Avg. L} & \textbf{Prozentsatz eingespart} \\
-		Huffman & $-$ & $-$ & $~-$ & $~-$ \\
-		Shannon & $-$ & $-$ & $~-$ & $~-$ \\
-		Fano & $-$ & $-$ & $~-$ & $~-$ \\
+		\textbf{Kompressionssystem} & \textbf{Prozesse} & \textbf{Größe} & \textbf{$\overline{L}$ Avg. L} & \textbf{Prozentsatz} \\
+		Huffman & $5575693$ & $27.2$ & $4.88$ & $61.0\%$ \\
+		Shannon & $5576446$ & $29.6$ & $5.31$ & $66.4\%$ \\
+		Fano & $5575268$ & $27.4$ & $4.91$ & $61.4\%$ \\
 	\end{tabular}
 	\caption{Vergleich der verschiedenen Kompressionssysteme mit Shakespeare}
 	\label{tab:placeholder}

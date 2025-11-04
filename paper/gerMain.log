@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  4 NOV 2025 09:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  4 NOV 2025 10:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1088,7 +1088,7 @@ ns-me-tho-de, bei der die ur-spr[]ungliche
 [5])
 
 [6] (kompressionssysteme.tex (gerShannon.tex)
-Overfull \hbox (20.72874pt too wide) in paragraph at lines 69--3
+Overfull \hbox (20.72874pt too wide) in paragraph at lines 65--3
 \OT1/cmr/m/n/12 Travis Ga-gie schl[]agt ei-ne Me-tho-de zur Er-stel-lung ei-nes
  ad-ap-ti-ven Shannon-Kodierungssystems
  []
@@ -1157,16 +1157,6 @@ Overfull \hbox (8.62764pt too wide) in paragraph at lines 1--1
 h-
  []
 
-
-Overfull \hbox (37.94257pt too wide) in paragraph at lines 16--22
- [][] 
- []
-
-
-Overfull \hbox (1.94208pt too wide) in paragraph at lines 28--34
- [][] 
- []
-
 )
 
 [14] (gerConclusion.tex)
@@ -1182,7 +1172,15 @@ L3 programming layer <2025-09-02>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                gerMain
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'gerMain.run.xml'.
 \openout1 = `gerMain.run.xml'.
@@ -1191,7 +1189,7 @@ Package logreq Info: Writing requests to 'gerMain.run.xml'.
 Here is how much of TeX's memory you used:
  27196 strings out of 468130
  553889 string characters out of 5433965
- 1394761 words of memory out of 5000000
+ 1392669 words of memory out of 5000000
  55377 multiletter control sequences out of 15000+600000
  635121 words of font info for 69 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -1212,7 +1210,7 @@ amsfonts/cm/cmsy10.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/pu
 blic/amsfonts/cm/cmtt12.pfb>
-Output written on gerMain.pdf (17 pages, 388130 bytes).
+Output written on gerMain.pdf (17 pages, 387351 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
