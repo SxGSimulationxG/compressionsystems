@@ -38,6 +38,8 @@ public class Index {
             System.out.println("Processes executed: " + report.getProcesses());
             double ratio = report.compressionRatio(originalBits);
             System.out.printf("Compression ratio: %.4f\n", ratio);
+            System.out.printf("Information entropy: %.4f bits\n", report.getEntropy());
+            System.out.printf("Average code word length: %.4f bits/symbol\n", report.getAverageCodewordLength());
             System.out.println();
         }
     }

@@ -27,8 +27,10 @@ public abstract class CompressionSystem {
             encodedBits += code.length();
         }
 
+        double entropy = computeEntropy();
+        double averageCodeLength = computeAverageCodeLength(codebook);
         int totalProcesses = result.processes() + input.length; // include encoding steps
-        return new CompressionReport(getName(), encodedBits, totalProcesses, codebook);
+        return new CompressionReport(getName(), encodedBits, totalProcesses, codebook, entropy, averageCodeLength);
     }
 
     protected abstract String getName();
@@ -68,6 +70,29 @@ public abstract class CompressionSystem {
             probs[i] = (double) frequencies[i] / (double) totalLength;
         }
         return probs;
+    }
+
+    private double computeEntropy() {
+        double entropy = 0.0;
+        for (double probability : probabilities) {
+            if (probability > 0.0) {
+                entropy -= probability * (Math.log(probability) / Math.log(2.0));
+            }
+        }
+        return entropy;
+    }
+
+    private double computeAverageCodeLength(Map<Character, String> codebook) {
+        double averageLength = 0.0;
+        for (int i = 0; i < symbols.length; i++) {
+            char symbol = symbols[i];
+            String code = codebook.get(symbol);
+            if (code == null) {
+                throw new IllegalStateException("Missing code for character: '" + symbol + "'");
+            }
+            averageLength += probabilities[i] * code.length();
+        }
+        return averageLength;
     }
 
     protected record EncodingResult(Map<Character, String> codebook, int processes) { }

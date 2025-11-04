@@ -21,6 +21,7 @@ public class HuffmanStatic extends CompressionSystem {
             return new EncodingResult(codes, 0);
         }
 
+        // Build the priority queue containing one leaf node per symbol ordered by frequency
         PriorityQueue<Node> queue = new PriorityQueue<>(Comparator.comparingInt(node -> node.frequency));
         for (int i = 0; i < symbols.length; i++) {
             queue.offer(new Node(symbols[i], frequencies[i]));
@@ -28,6 +29,7 @@ public class HuffmanStatic extends CompressionSystem {
 
         int operations = symbols.length; // queue insertions
 
+        // Repeatedly merge the lowest-frequency nodes to construct the Huffman tree
         while (queue.size() > 1) {
             Node left = queue.poll();
             Node right = queue.poll();
@@ -38,9 +40,11 @@ public class HuffmanStatic extends CompressionSystem {
 
         Node root = queue.poll();
         if (root.isLeaf()) {
+            // Special case for single-symbol inputs where the code must still have at least one bit
             codes.put(root.symbol, "0");
             operations++;
         } else {
+            // Traverse the tree to assign bit strings to each symbol
             operations += assignCodes(root, "", codes);
         }
 
@@ -54,6 +58,7 @@ public class HuffmanStatic extends CompressionSystem {
             return 1;
         }
 
+        // Recursively walk left and right subtrees to build the final codewords
         int operations = 1; // split operation
         operations += assignCodes(Objects.requireNonNull(node.left), prefix + '0', codes);
         operations += assignCodes(Objects.requireNonNull(node.right), prefix + '1', codes);

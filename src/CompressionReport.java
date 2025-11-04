@@ -5,12 +5,17 @@ public class CompressionReport {
     private final int totalBits;
     private final int processes;
     private final Map<Character, String> codebook;
+    private final double entropy;
+    private final double averageCodewordLength;
 
-    public CompressionReport(String algorithmName, int totalBits, int processes, Map<Character, String> codebook) {
+    public CompressionReport(String algorithmName, int totalBits, int processes, Map<Character, String> codebook,
+                             double entropy, double averageCodewordLength) {
         this.algorithmName = algorithmName;
         this.totalBits = totalBits;
         this.processes = processes;
         this.codebook = Map.copyOf(codebook);
+        this.entropy = entropy;
+        this.averageCodewordLength = averageCodewordLength;
     }
 
     public String getAlgorithmName() {
@@ -27,6 +32,14 @@ public class CompressionReport {
 
     public Map<Character, String> getCodebook() {
         return codebook;
+    }
+
+    public double getEntropy() {
+        return entropy;
+    }
+
+    public double getAverageCodewordLength() {
+        return averageCodewordLength;
     }
 
     public int getTotalBytesRounded() {
