@@ -19,15 +19,18 @@ public class ShannonStatic extends CompressionSystem {
             return new EncodingResult(codes, 0);
         }
 
+        // Track the cumulative probability mass to determine each binary fraction prefix
         double cumulative = 0.0;
         int operations = 0;
         for (int i = 0; i < symbols.length; i++) {
             double probability = probabilities[i];
+            // Shannon's coding assigns a code length based on the symbol probability
             int length = probability == 0.0 ? 1 : (int) Math.ceil(-log2(probability));
             if (length == 0) {
                 length = 1;
             }
 
+            // Convert the cumulative probability to a binary fraction of the desired length
             String code = binaryFraction(cumulative, length);
             codes.put(symbols[i], code);
             cumulative += probability;
@@ -35,6 +38,7 @@ public class ShannonStatic extends CompressionSystem {
         }
 
         if (symbols.length == 1) {
+            // Ensure a single-symbol input still yields a one-bit codeword
             codes.put(symbols[0], "0");
         }
 
