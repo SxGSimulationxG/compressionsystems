@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {2}Grundlegende Kompressionssysteme}{7}{}%
 \contentsline {subsection}{\numberline {2.1}Shannon Codierung}{7}{}%
 \contentsline {subsubsection}{\numberline {2.1.1}Beispiel: Statisches Shannon Kodierung}{7}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}Adaptive Shannon Kodierung}{7}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Adaptive Shannon Kodierung}{8}{}%
 \contentsline {subsection}{\numberline {2.2}Fano Codierung}{9}{}%
 \contentsline {subsubsection}{\numberline {2.2.1}Beispiel: Statisches Fano Kodierung}{9}{}%
 \contentsline {subsubsection}{\numberline {2.2.2}Adaptive Fano Codierung}{10}{}%

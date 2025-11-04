@@ -9,10 +9,30 @@ Even though the Shannon Method suggested by Claude E. Shannon is not commonly us
 	\right.
 \end{equation}
 
-
 \begin{equation}
 	l_i=\lceil log_r(p_i^{-1})\rceil
 \end{equation}
+
+Shannon also states that with an increase in length $N$ of our input sequence the average length of the code word $H'$ approaches the entropy $H$.
+
+\begin{equation}
+	H'=\frac{1}{N} \sum(m_s p_s)
+\end{equation}
+
+Here $p_s$ is the value for the cumulative probability function $P_i$. $m_s$ is an integer where:
+\begin{equation}
+	\log_2(\frac{1}{p_s}) \leq m_s < \log_2(\frac{1}{p_s}) + 1
+\end{equation}
+
+\begin{equation}
+	\frac{1}{N} \sum(\log_2\frac{1}{p_s})p_s \leq H' < \frac{1}{N}\sum(\log_2\frac{1}{p_s} + 1)p_s
+\end{equation}
+
+\begin{equation}
+	H_s \leq H' \leq H_s + \frac{1}{N}
+\end{equation}
+
+If this assumption is correct, it proves the intuition that for a longer input, the more effective a compression system gets, even if the compression system is not optimal. The value for the average code word length, however, can never get lower than the value for the entropy $H$ without losing information.
 
 \subsubsection{Example: Static Shannon Coding}
 
