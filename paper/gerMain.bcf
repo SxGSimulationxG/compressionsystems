@@ -2406,8 +2406,10 @@
     <bcf:citekey order="31" intorder="1">kieffer2000grammar</bcf:citekey>
     <bcf:citekey order="32" intorder="1">charikar2005smallest</bcf:citekey>
     <bcf:citekey order="33" intorder="1">charikar2005smallest</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">wordnikWords</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">shakespeareCompleteWorks</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">steinruecken2015lossless</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">steinruecken2015lossless</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">wordnikWords</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">shakespeareCompleteWorks</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  4 NOV 2025 12:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  4 NOV 2025 14:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1110,13 +1110,13 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 30--31
 
 
 
-[9]
-Overfull \hbox (39.51042pt too wide) in paragraph at lines 38--40
+[9])
+Overfull \hbox (39.51042pt too wide) in paragraph at lines 38--5
 \OT1/cmr/m/n/12 Luis Rue-da schl[]agt zwei ver-schie-de-ne M[]oglichkeiten vor,
  um ein ad-ap-ti-ves Fano-Kodierungssystem
  []
 
-)
+
 
 [10 <./fanoTree.png>] (gerHuffman.tex
 <huffmanTree.png, id=51, 1927.2pt x 1084.05pt>
@@ -1167,7 +1167,23 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 6--7
 
 ) (grammarBased.tex
 
-[13 <./blockSorting.png>]))
+[13 <./blockSorting.png>]) (predictionPartialMatching.tex
+Overfull \hbox (5.95131pt too wide) in paragraph at lines 8--9
+[]| \OT1/cmr/m/n/12 Ak-tua-li-sie-ren Sie die Wahr-schein-lich-keits-ver-tei-lu
+ng und den ent-spre-chen-den Vine-
+ []
+
+<ppm.png, id=65, 759.58781pt x 284.56313pt>
+File: ppm.png Graphic file (type png)
+<use ppm.png>
+Package pdftex.def Info: ppm.png  used on input line 16.
+(pdftex.def)             Requested size: 500.77129pt x 187.60815pt.
+
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 16--17
+ [][] 
+ []
+
+))
 
 [14] (ergebnisse.tex
 Overfull \hbox (8.62764pt too wide) in paragraph at lines 1--1
@@ -1175,9 +1191,12 @@ Overfull \hbox (8.62764pt too wide) in paragraph at lines 1--1
 h-
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 )
 
-[15] (gerConclusion.tex)
+[15 <./ppm.png>] (gerConclusion.tex)
 
 [16]
 
@@ -1195,10 +1214,10 @@ Package logreq Info: Writing requests to 'gerMain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27198 strings out of 468130
- 553810 string characters out of 5433965
- 1389506 words of memory out of 5000000
- 55376 multiletter control sequences out of 15000+600000
+ 27211 strings out of 468130
+ 554009 string characters out of 5433965
+ 1389262 words of memory out of 5000000
+ 55386 multiletter control sequences out of 15000+600000
  635121 words of font info for 69 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,14n,101p,4402b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1218,9 +1237,9 @@ amsfonts/cm/cmsy10.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/pu
 blic/amsfonts/cm/cmtt12.pfb>
-Output written on gerMain.pdf (17 pages, 423210 bytes).
+Output written on gerMain.pdf (17 pages, 501376 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

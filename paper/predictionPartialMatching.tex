@@ -1,0 +1,19 @@
+\subsection{Prediction with Partial Matching}
+Die Methode der "Prediction with Partial Matching" verwendet einen Suchbaum, der als "Trie" bezeichnet wird, mit einer maximalen Tiefe $D$, wobei jeder Knoten eine bestimmte Wahrscheinlichkeitsverteilung in Abhängigkeit von seinen Eltern sowie Vine-Zeiger auf die darüber liegende Ebene aufweist. Diese Methode funktioniert in mehreren Schritten\footnote{\cite{steinruecken2015lossless} p.111-113: 6.3.1 Basic Operation}:
+\begin{enumerate}
+	\item Erstellen Sie einen leeren Baum.
+	\item Wiederholen Sie dies, bis das Ende erreicht ist:
+	\subitem Lesen Sie die nächste Eingabe.
+	\subitem Verwenden Sie die Wahrscheinlichkeitsverteilung des aktuellen Knotens, um die Eingabe zu codieren.
+	\subitem Aktualisieren Sie die Wahrscheinlichkeitsverteilung und den entsprechenden Vine-Knoten.
+	\subitem Suchen Sie den erforderlichen Knoten, der der Eingabe entspricht. Wenn die Tiefe maximal ist, wechseln Sie zum Knoten des Vine-Zeigers. Wenn der erforderliche Knoten nicht existiert, erstellen Sie einen und aktualisieren Sie den Baum, damit er funktioniert.
+	\subitem Setzen Sie einen Zeiger vom aktuellen Knoten zum Knoten des Kindes und gehen Sie zu diesem Knoten.
+\end{enumerate}
+Dies lässt sich grafisch darstellen, wobei die gepunkteten Linien die Vine-Zeiger und die normalen Zeiger den Pfad anzeigen, den der Algorithmus durchlaufen hat. Der schattierte Knoten ist die Position am Ende des Algorithmus:
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1.1\linewidth]{ppm}
+	\caption{Beispiele aus \cite{steinruecken2015lossless}}
+	\label{fig:ppm}
+\end{figure}

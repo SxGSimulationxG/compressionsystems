@@ -55,7 +55,16 @@ In this context, the aim is to make the smallest possible context-free grammar f
 Here $|G_x|=14$ being the smallest grammar for making the string "a rose is a rose is a rose".
 
 \subsubsection{Prediction with Partial Matching}
+The method of prediction with partial matching uses a search tree called a "trie" with a maximum depth $D$, each node having a certain probability distribution depending on it's parents as well as vine pointers to the layer above. This method works in several steps:
+\begin{enumerate}
+	\item Create an empty tree.
+	\item Repeat until end is reached:
+	\subitem Read the next input.
+	\subitem Use the probability distribution of the current node to encode the input.
+	\subitem Update the probability distribution and the corresponding vine node.
+	\subitem Find the required node corresponding to the input from the row above, if this doesn't exist create one and update the tree to make it work.
+	\subitem Set a pointer from the current node to the node of the child and move to that node.
+\end{enumerate}
+This can be visualised graphically, here the dotted lines indicating the vine pointers and the normal pointers the path in which the algorithm passed through, the shaded node is the position at the end of the algorithm:
 
-\subsubsection{Context Tree Weighting}
 
-\subsubsection{Multilevel Pattern Matching}

@@ -20,5 +20,6 @@
 \contentsline {subsection}{\numberline {3.1}Dictionary Based Kodierung}{13}{}%
 \contentsline {subsection}{\numberline {3.2}Block-Sorting Kompressionsalgorithmus}{13}{}%
 \contentsline {subsection}{\numberline {3.3}Grammatikbasierte Codierung}{13}{}%
+\contentsline {subsection}{\numberline {3.4}Prediction with Partial Matching}{14}{}%
 \contentsline {section}{\numberline {4}Vergleich der ursprünglichen Kompressionsalgorithmen}{15}{}%
 \contentsline {section}{\numberline {5}Schluss}{16}{}%
