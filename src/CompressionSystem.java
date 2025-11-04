@@ -18,6 +18,7 @@ public abstract class CompressionSystem {
         EncodingResult result = buildCodebook();
         Map<Character, String> codebook = result.codebook();
         int encodedBits = 0;
+        int originalBits = input.length * 8;
 
         for (char c : input) {
             String code = codebook.get(c);
@@ -30,7 +31,7 @@ public abstract class CompressionSystem {
         double entropy = computeEntropy();
         double averageCodeLength = computeAverageCodeLength(codebook);
         int totalProcesses = result.processes() + input.length; // include encoding steps
-        return new CompressionReport(getName(), encodedBits, totalProcesses, codebook, entropy, averageCodeLength);
+        return new CompressionReport(getName(), encodedBits, originalBits, totalProcesses, codebook, entropy, averageCodeLength);
     }
 
     protected abstract String getName();
