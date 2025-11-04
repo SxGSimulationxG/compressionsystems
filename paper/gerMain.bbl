@@ -239,17 +239,6 @@
       \field{pages}{1098\bibrangedash 1101}
       \range{pages}{4}
     \endentry
-    \entry{iso646ascii7bit}{manual}{}{}
-      \list{organization}{2}{%
-        {The International Organization for Standardization}%
-        {The International Electrotechnical Commission}%
-      }
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{labeltitlesource}{title}
-      \field{title}{ISO/IEC 646:1991 Information technology - ISO 7-bit coded character set for Information Interchange}
-      \field{year}{1991}
-    \endentry
     \entry{cnssGlossary}{manual}{}{}
       \name{author}{1}{}{%
         {{hash=bc6df18b4c851b5e8b215025a465cffc}{%
@@ -389,32 +378,6 @@
       \field{year}{2015}
       \field{pages}{1746\bibrangedash 1750}
       \range{pages}{5}
-    \endentry
-    \entry{mackenzie1980coded}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=e400185406df04442e8fbe072c79e935}{%
-           family={Mackenzie},
-           familyi={M\bibinitperiod},
-           given={Charles\bibnamedelima E},
-           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Addison-Wesley Longman Publishing Co., Inc.}%
-      }
-      \strng{namehash}{e400185406df04442e8fbe072c79e935}
-      \strng{fullhash}{e400185406df04442e8fbe072c79e935}
-      \strng{fullhashraw}{e400185406df04442e8fbe072c79e935}
-      \strng{bibnamehash}{e400185406df04442e8fbe072c79e935}
-      \strng{authorbibnamehash}{e400185406df04442e8fbe072c79e935}
-      \strng{authornamehash}{e400185406df04442e8fbe072c79e935}
-      \strng{authorfullhash}{e400185406df04442e8fbe072c79e935}
-      \strng{authorfullhashraw}{e400185406df04442e8fbe072c79e935}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Coded-Character Sets: History and Development}
-      \field{year}{1980}
     \endentry
     \entry{pivkinadiscovery}{article}{}{}
       \name{author}{1}{}{%
@@ -588,6 +551,33 @@
       \field{volume}{2}
       \field{year}{1889}
     \endentry
+    \entry{steinruecken2015lossless}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=0fc179bc1efbfdfaa52f56a69a1e5ec0}{%
+           family={Steinruecken},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Cambridge}%
+      }
+      \strng{namehash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{fullhash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{fullhashraw}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{bibnamehash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{authorbibnamehash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{authornamehash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{authorfullhash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{authorfullhashraw}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lossless data compression}
+      \field{type}{phdthesis}
+      \field{year}{2015}
+    \endentry
     \entry{storer1982data}{article}{}{}
       \name{author}{2}{}{%
         {{hash=9fec20c96fd553fda8024039369eb704}{%
@@ -623,19 +613,6 @@
       \field{year}{1982}
       \field{pages}{928\bibrangedash 951}
       \range{pages}{24}
-    \endentry
-    \entry{unicode170}{manual}{}{}
-      \list{location}{1}{%
-        {San Francisco, CA, United States of America}%
-      }
-      \list{organization}{1}{%
-        {The Unicode Consortium}%
-      }
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labeltitlesource}{title}
-      \field{title}{The Unicode Standard, Version 17.0}
-      \field{year}{2025}
     \endentry
   \enddatalist
 \endrefsection

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  4 NOV 2025 10:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  4 NOV 2025 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1088,7 +1088,7 @@ ns-me-tho-de, bei der die ur-spr[]ungliche
 [5])
 
 [6] (kompressionssysteme.tex (gerShannon.tex)
-Overfull \hbox (20.72874pt too wide) in paragraph at lines 65--3
+Overfull \hbox (20.72874pt too wide) in paragraph at lines 63--3
 \OT1/cmr/m/n/12 Travis Ga-gie schl[]agt ei-ne Me-tho-de zur Er-stel-lung ei-nes
  ad-ap-ti-ven Shannon-Kodierungssystems
  []
@@ -1149,9 +1149,27 @@ Overfull \hbox (20.898pt too wide) in paragraph at lines 4--4
 [][][]\OT1/cmr/m/n/12 LZ77/Deflate[]  
  []
 
-) (grammarBased.tex))
+) (blockSorting.tex
+Overfull \hbox (34.94102pt too wide) in paragraph at lines 2--3
+\OT1/cmr/m/n/12 Der Block-Sorting-Kompressionsalgorithmus, auch be-kannt als Bu
+rrows-Wheeler-Transformation
+ []
 
-[13] (ergebnisse.tex
+<blockSorting.png, id=59, 804.75656pt x 220.57407pt>
+File: blockSorting.png Graphic file (type png)
+<use blockSorting.png>
+Package pdftex.def Info: blockSorting.png  used on input line 6.
+(pdftex.def)             Requested size: 500.77129pt x 137.25598pt.
+
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 6--7
+ [][] 
+ []
+
+) (grammarBased.tex
+
+[13 <./blockSorting.png>]))
+
+[14] (ergebnisse.tex
 Overfull \hbox (8.62764pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/17.28 Vergleich der ur-spr[]unglichen Kom-pres-si-ons-al-go-rit
 h-
@@ -1159,9 +1177,7 @@ h-
 
 )
 
-[14] (gerConclusion.tex)
-
-[15]
+[15] (gerConclusion.tex)
 
 [16]
 
@@ -1172,25 +1188,17 @@ L3 programming layer <2025-09-02>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                gerMain
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'gerMain.run.xml'.
 \openout1 = `gerMain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27196 strings out of 468130
- 553889 string characters out of 5433965
- 1392669 words of memory out of 5000000
- 55377 multiletter control sequences out of 15000+600000
+ 27198 strings out of 468130
+ 553810 string characters out of 5433965
+ 1389506 words of memory out of 5000000
+ 55376 multiletter control sequences out of 15000+600000
  635121 words of font info for 69 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,14n,101p,4402b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1210,9 +1218,9 @@ amsfonts/cm/cmsy10.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/pu
 blic/amsfonts/cm/cmtt12.pfb>
-Output written on gerMain.pdf (17 pages, 387351 bytes).
+Output written on gerMain.pdf (17 pages, 423210 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
+ 142 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
