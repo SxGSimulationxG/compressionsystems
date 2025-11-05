@@ -14,13 +14,13 @@ In der folgenden Seminararbeit werden zunächst die Funktionsweise der grundlege
 Verlustfreie Kompressionssysteme sind eine Kompressionsmethode, bei der die originale unkomprimierte Form in ihrer originalen Qualität rekonstruiert werden kann. Im Gegensatz dazu stehen die verlustbehafteten Kompressionssysteme, bei dem weniger relevante Informationen verworfen werden, um die Größe zu komprimieren\footnote{\cite{blelloch2001introduction} p.40-41: 7 Lossy Compression Techniques}. Hier befassen wir uns ausschließlich mit verlustfreien Kompressionssystemen. 
 
 \subsubsection{Informationsentropie}
-Die Informationsentropie beschreibt das Verhältnis zwischen den Wahrscheinlichkeiten der Eingabesequenz und der Länge des Codeworts. Bei einem optimalen verlustfreien Kompressionssystem entspricht die durchschnittliche Codewortlänge dem Wert der Informationsentropie. Dieses Konzept war eines der wichtigsten in Shannons Grundlagen der Informationstheorie. In dem Moment, in dem die durchschnittliche Codewortlänge unter den Wert der Entropie $H$ fällt, geht Information verloren, sodass das Kompressionssystem nicht mehr verlustfrei ist. 
+Die Informationsentropie beschreibt die durchschnittliche Informationsgehalt pro Bit. Bei einem optimalen verlustfreien Kompressionssystem entspricht die durchschnittliche Codewortlänge dem Wert der Informationsentropie. Dieses Konzept war eines der wichtigsten in Shannons Grundlagen der Informationstheorie. In dem Moment, in dem die durchschnittliche Codewortlänge unter den Wert der Entropie $H$ fällt, geht Information verloren, sodass das Kompressionssystem nicht mehr verlustfrei ist. 
 
 \begin{equation}
 	H=-\sum p_i \log(p_i)
 \end{equation}
 
-Diese Gleichung gilt, wenn die Zeichen voneinander unabhängig sind\footnote{\cite{shannonMathematicalCommunication} p.396-399: 7 The Entropy of an Information Source}.
+Diese Gleichung für die Entropie gilt, wenn die Eingabezeichen mit deren Auftrittwahrscheinlichkeit voneinander unabhängig sind\footnote{\cite{shannonMathematicalCommunication} p.396-399: 7 The Entropy of an Information Source}.
 
 \subsubsection{Unterschied zwischen Higher-order und Zeroth-order Systemen}
 In einem zeroth-order System wird jedes Zeichen unabhängig voneinander codiert, wobei Korrelationen zwischen den Zeichen in der Eingabesequenz nicht berücksichtigt werden. Ein higher-order System ist in der Lage, Muster über mehrere Zeichen hinweg zu erkennen und zu nutzen\footnote{\cite{rueda2002advances} p.40-44: 2.2.4 Higher-order Sources}. 
@@ -29,5 +29,7 @@ In einem zeroth-order System wird jedes Zeichen unabhängig voneinander codiert,
 In einem statischen Kodierungssystem verfügen wir vor der Kodierung der Sequenz über Kenntnisse hinsichtlich der Wahrscheinlichkeiten der Quellsequenz. In einem adaptiven System ist die einzige Eingabe, über die der Kodierer verfügt, die Quellsequenz selbst. Das System passt dann das Kodierungsschema an die Änderungen in der Häufigkeit der Eingabezeichen an\footnote{\cite{rueda2002advances} p.60-61: 2.5 Adaptive Coding}.
 
 \subsubsection{Optimalität}
+Die Optimalität eines Codes wird von Huffman beschreiben als eine Kodierungsschema, welche die kurzmöglichste durschnittliche Codewortlänge besitzt und so am wenigsten Redundanz besitzt (engl. minimum-redundancy codes)\footnote{\cite{huffmanOriginal} p.1098: Introduction}. Diese kurzmöglichste Codewortlänge wird auch in der Prinzip der Informationsentropie von Shannon beschrieben. Die theoretisch optimale Kodierungsalgorithmus besitzt eine durchschnittliche Codewortlänge, welche gleich ist wie die Wert der Informationsentropie eines Eingabesequenz besitzt. 
 
 \subsubsection{Präfixfreiheit}
+Die Präfixfreiheit oder Präfixeigenschaft besagt, dass ein Codewort kein Präfix einer anderen sein kann. So kann kein Codewort mit einem anderen verwechselt werden und die Ende eines Codeworts eindeutig gefunden werden. Dies macht die Dekodierung deutlich einfacher\footnote{\cite{steinruecken2015lossless} p.22-23: 2.1 Symbol Codes}. Ein Beispiel für einer Kodierungsschema welche diese Eigenschaft nicht besitzt, wäre wenn man zum Beispiel $a$ mit $0$ kodiert und $b$ mit $00$. $a$ ist hier ein Präfix von $b$. So kann man bei der Codewort $00$ nicht wissen ob es sich um einen $b$ handelt oder zwei $a$s.

@@ -19,10 +19,10 @@
 \contentsline {subsubsection}{\numberline {2.3.1}Beispiel: Statisches Huffman Codierung}{11}{}%
 \contentsline {subsubsection}{\numberline {2.3.2}Adaptive Huffman Codierung}{13}{}%
 \contentsline {subsection}{\numberline {2.4}Unterschied in der Effizienz zwischen statischen und adaptiven Kodierungssystemen}{13}{}%
-\contentsline {section}{\numberline {3}Higher-order Systeme}{14}{}%
-\contentsline {subsection}{\numberline {3.1}Dictionary Based Kodierung}{14}{}%
-\contentsline {subsection}{\numberline {3.2}Block-Sorting Kompressionsalgorithmus}{14}{}%
-\contentsline {subsection}{\numberline {3.3}Grammatikbasierte Codierung}{15}{}%
-\contentsline {subsection}{\numberline {3.4}Prediction with Partial Matching}{15}{}%
-\contentsline {section}{\numberline {4}Vergleich der ursprünglichen Kompressionsalgorithmen}{18}{}%
-\contentsline {section}{\numberline {5}Schluss}{19}{}%
+\contentsline {section}{\numberline {3}Higher-order Systeme}{15}{}%
+\contentsline {subsection}{\numberline {3.1}Dictionary Based Kodierung}{15}{}%
+\contentsline {subsection}{\numberline {3.2}Block-Sorting Kompressionsalgorithmus}{15}{}%
+\contentsline {subsection}{\numberline {3.3}Grammatikbasierte Codierung}{16}{}%
+\contentsline {subsection}{\numberline {3.4}Prediction with Partial Matching}{16}{}%
+\contentsline {section}{\numberline {4}Vergleich der ursprünglichen Kompressionsalgorithmen}{19}{}%
+\contentsline {section}{\numberline {5}Schluss}{20}{}%

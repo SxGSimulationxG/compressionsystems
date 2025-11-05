@@ -121,6 +121,42 @@
       \field{pages}{2554\bibrangedash 2576}
       \range{pages}{23}
     \endentry
+    \entry{cleary1984comparison}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=05ecfa1bf8d51f78a4e2b50078fa59bf}{%
+           family={Cleary},
+           familyi={C\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b644769ef880ae7bc818a613238d0b56}{%
+           family={Witten},
+           familyi={W\bibinitperiod},
+           given={I},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{fullhash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{fullhashraw}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{bibnamehash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{authorbibnamehash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{authornamehash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{authorfullhash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{authorfullhashraw}{85c4d6e38d0192ac1be83ae39aebf927}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{number}{2}
+      \field{title}{A comparison of enumerative and adaptive codes}
+      \field{volume}{30}
+      \field{year}{1984}
+      \field{pages}{306\bibrangedash 315}
+      \range{pages}{10}
+    \endentry
     \entry{fanoTransmissionInformation}{book}{}{}
       \name{author}{1}{}{%
         {{hash=7ebe6094812aec1918c8c4f5a5fc9512}{%
@@ -267,42 +303,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Committee on National Security Systems Glossary}
       \field{year}{2022}
-    \endentry
-    \entry{kieffer2000grammar}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=c4cc2b56bed90e998c34235128120220}{%
-           family={Kieffer},
-           familyi={K\bibinitperiod},
-           given={John\bibnamedelima C},
-           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=2b9549e7d83847c4da96a820fa9a522c}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={En-Hui},
-           giveni={E\bibinithyphendelim H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{fullhash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{fullhashraw}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{bibnamehash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{authorbibnamehash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{authornamehash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{authorfullhash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{authorfullhashraw}{cf03fd420472b5189f8f5b289649edf8}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Information Theory}
-      \field{number}{3}
-      \field{title}{Grammar-based codes: A new class of universal lossless source codes}
-      \field{volume}{46}
-      \field{year}{2000}
-      \field{pages}{737\bibrangedash 754}
-      \range{pages}{18}
     \endentry
     \entry{knuthDynamicHuffman}{article}{}{}
       \name{author}{1}{}{%
