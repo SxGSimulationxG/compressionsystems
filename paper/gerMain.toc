@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {1.2}Grundlegende Prinzipien}{5}{}%
 \contentsline {subsubsection}{\numberline {1.2.1}Unterschied zwischen verlustfreie und verlustbehaftete Kompressionssysteme}{5}{}%
 \contentsline {subsubsection}{\numberline {1.2.2}Informationsentropie}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.3}Unterschied zwischen Higher-order und Zeroth-order Systemen}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Unterschied zwischen Higher-order und Zeroth-order Systemen}{5}{}%
 \contentsline {subsubsection}{\numberline {1.2.4}Unterschied zwischen statischen und adaptiven Kodierungssystemen}{6}{}%
 \contentsline {subsubsection}{\numberline {1.2.5}Optimalität}{6}{}%
 \contentsline {subsubsection}{\numberline {1.2.6}Präfixfreiheit}{6}{}%
