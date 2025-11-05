@@ -11,7 +11,7 @@ In der folgenden Seminararbeit werden zunächst die Funktionsweise der grundlege
 \subsection{Grundlegende Prinzipien}
 
 \subsubsection{Unterschied zwischen verlustfreie und verlustbehaftete Kompressionssysteme}
-Verlustfreie Kompressionssysteme sind eine Kompressionsmethode, bei der die ursprüngliche unkomprimierte Form in ihrer ursprünglichen Qualität rekonstruiert werden kann. Im Vergleich dazu sind die verlustbehaftete Kompressionssysteme, bei dem weniger relevante Informationen verworfen werden, um die Größe zu komprimieren\footnote{\cite{blelloch2001introduction} p.40-41: 7 Lossy Compression Techniques}. Hier befassen wir uns ausschließlich mit verlustfreien Kompressionssysteme. 
+Verlustfreie Kompressionssysteme sind eine Kompressionsmethode, bei der die originale unkomprimierte Form in ihrer originalen Qualität rekonstruiert werden kann. Im Gegensatz dazu stehen die verlustbehafteten Kompressionssysteme, bei dem weniger relevante Informationen verworfen werden, um die Größe zu komprimieren\footnote{\cite{blelloch2001introduction} p.40-41: 7 Lossy Compression Techniques}. Hier befassen wir uns ausschließlich mit verlustfreien Kompressionssystemen. 
 
 \subsubsection{Informationsentropie}
 Die Informationsentropie beschreibt das Verhältnis zwischen den Wahrscheinlichkeiten der Eingabesequenz und der Länge des Codeworts. Bei einem optimalen verlustfreien Kompressionssystem entspricht die durchschnittliche Codewortlänge dem Wert der Informationsentropie. Dieses Konzept war eines der wichtigsten in Shannons Grundlagen der Informationstheorie. In dem Moment, in dem die durchschnittliche Codewortlänge unter den Wert der Entropie $H$ fällt, geht Information verloren, sodass das Kompressionssystem nicht mehr verlustfrei ist. 
@@ -22,8 +22,12 @@ Die Informationsentropie beschreibt das Verhältnis zwischen den Wahrscheinlichk
 
 Diese Gleichung gilt, wenn die Zeichen voneinander unabhängig sind\footnote{\cite{shannonMathematicalCommunication} p.396-399: 7 The Entropy of an Information Source}.
 
-\subsubsection{Unterschied zwischen Higher-order und Zeroth-order Systeme}
+\subsubsection{Unterschied zwischen Higher-order und Zeroth-order Systemen}
 In einem zeroth-order System wird jedes Zeichen unabhängig voneinander codiert, wobei Korrelationen zwischen den Zeichen in der Eingabesequenz nicht berücksichtigt werden. Ein higher-order System ist in der Lage, Muster über mehrere Zeichen hinweg zu erkennen und zu nutzen\footnote{\cite{rueda2002advances} p.40-44: 2.2.4 Higher-order Sources}. 
 
-\subsubsection{Unterschied zwischen statische und adaptive Kodierungssysteme}
+\subsubsection{Unterschied zwischen statischen und adaptiven Kodierungssystemen}
 In einem statischen Kodierungssystem verfügen wir vor der Kodierung der Sequenz über Kenntnisse hinsichtlich der Wahrscheinlichkeiten der Quellsequenz. In einem adaptiven System ist die einzige Eingabe, über die der Kodierer verfügt, die Quellsequenz selbst. Das System passt dann das Kodierungsschema an die Änderungen in der Häufigkeit der Eingabezeichen an\footnote{\cite{rueda2002advances} p.60-61: 2.5 Adaptive Coding}.
+
+\subsubsection{Optimalität}
+
+\subsubsection{Präfixfreiheit}

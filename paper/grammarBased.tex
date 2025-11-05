@@ -1,16 +1,40 @@
 \subsection{Grammatikbasierte Codierung}
-Bei der grammatikbasierten Codierung (Englisch: Grammar Based Coding) verwenden wir das Konzept der formalen Sprachen und Grammatiken aus der Informatik, wobei eine Grammatik $G$ aus einer Liste der Terminale $T$ oder einem Alphabet $A$ oder $\Sigma$, einer Liste von Nicht-Terminale $N$, einer Liste von Produktionsregeln $P$ und einem Startknoten $s$ besteht\footnote{\cite{rueda2002advances} p.80-81: 2.6.6 Grammar-Based Coding}. Mit diesem higher-order System codieren wir nicht die Zeichenkette $x$ selbst, sondern die Grammatik $G_x$. Da die Grammatik nur die Zeichenkette $x$ konstruiert, wird sie als kontextfreie Grammatik bezeichnet\footnote{\cite{kieffer2000grammar} p.2-4: Introduction}.
 
+Bei der grammatikbasierten Codierung (englisch: \textit{Grammar-Based Coding}) wird die Eingabesequenz nicht direkt codiert, sondern über eine Grammatik beschrieben, die genau diese Sequenz erzeugt. Dadurch lassen sich Wiederholungen und strukturelle Muster in der Zeichenkette effizient darstellen\footnote{\cite{rueda2002advances} p.80–81: 2.6.6 Grammar-Based Coding}.
+
+Eine Grammatik $G$ besteht aus:
+\begin{itemize}
+	\item einer Menge von Terminalsymbolen $T$ (oder Alphabet $A$ oder $\Sigma$),
+	\item einer Menge von Nichtterminalen $N$,
+	\item einer Menge von Produktionsregeln $P$,
+	\item und einem Startsymbol $s$.
+\end{itemize}
+
+Mit diesem höheren Abstraktionsgrad wird nicht die Zeichenkette $x$ selbst codiert, sondern die Grammatik $G_x$, die $x$ eindeutig erzeugt.  
+Da $G_x$ genau eine Zeichenkette erzeugt, handelt es sich um eine kontextfreie Grammatik, für die gilt:
 \begin{equation}
-	L(G_x)=\{x\}
+	L(G_x) = \{x\}
 \end{equation}
 
-In diesem Zusammenhang besteht das Ziel darin, die kleinstmögliche kontextfreie Grammatik für eine bestimmte Zeichenfolge $x$ zu erstellen. Die Größe einer Grammatik $|G_x|$ entspricht der Anzahl der Symbole auf der rechten Seite der Produktionsregeln $P$. Dieses Problem wird als „Smallest Grammar Problem” (SGP) bezeichnet\footnote{\cite{charikar2005smallest} p.1-2: Introduction}. Das in \cite{charikar2005smallest} angegebene Beispiel lautet:
+Das Ziel der grammatikbasierten Codierung besteht darin, die kleinstmögliche Grammatik zu finden, die eine gegebene Zeichenfolge $x$ beschreibt.  
+Die Größe einer Grammatik $|G_x|$ entspricht der Anzahl der Symbole auf der rechten Seite der Produktionsregeln $P$.  
+Dieses Optimierungsproblem wird als Smallest Grammar Problem (SGP) bezeichnet\footnote{\cite{charikar2005smallest} p.1–2: Introduction}.
 
+Ein Beispiel aus \cite{charikar2005smallest} verdeutlicht das Prinzip:
 \begin{equation}
-	P=\{<S> \to <B><B><A>,\\
-	<A> \to \text{a rose},\\
-	<B> \to <A> \text{ is }\}
+	P = \{
+	\langle S \rangle \to \langle B \rangle \langle B \rangle \langle A \rangle,\quad
+	\langle A \rangle \to \text{a rose},\quad
+	\langle B \rangle \to \langle A \rangle \text{ is}
+	\}
 \end{equation}
 
-Hier ist $|G_x|=14$ die kleinste Grammatik, um die Zeichenfolge „a rose is a rose is a rose“ zu bilden.
+Diese Grammatik erzeugt die Zeichenkette „a rose is a rose is a rose“ und besitzt die minimale Größe $|G_x| = 14$.  
+Damit beschreibt sie die Struktur der Wiederholungen sehr effizient, da gleiche Teilsequenzen nur einmal definiert werden müssen.
+
+Das Finden der kleinsten Grammatik ist ein NP-schweres Problem.  
+Ein Problem wird als NP-schwer bezeichnet, wenn es mindestens so schwierig ist wie die schwierigsten Probleme in der Komplexitätsklasse NP (nichtdeterministisch polynomiell).  
+Das bedeutet, dass bisher kein Algorithmus bekannt ist, der das Problem in polynomieller Zeit für alle Eingaben lösen kann.  
+Stattdessen wächst der Rechenaufwand mit zunehmender Eingabelänge exponentiell.  
+In der Praxis greift man daher auf Heuristiken oder Approximationsverfahren zurück, um eine hinreichend kleine, aber nicht unbedingt optimale Grammatik effizient zu finden.
+\todo{citation needed}

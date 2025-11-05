@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  4 NOV 2025 14:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  5 NOV 2025 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1078,17 +1078,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
 
 [4]
-Overfull \hbox (9.90932pt too wide) in paragraph at lines 14--15
-\OT1/cmr/m/n/12 Verlustfreie Kom-pres-si-ons-sys-te-me sind ei-ne Kom-pres-si-o
-ns-me-tho-de, bei der die ur-spr[]ungliche
- []
-
-
 
 [5])
 
-[6] (kompressionssysteme.tex (gerShannon.tex)
-Overfull \hbox (20.72874pt too wide) in paragraph at lines 63--3
+[6] (kompressionssysteme.tex (gerShannon.tex
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+)
+Overfull \hbox (20.72874pt too wide) in paragraph at lines 67--3
 \OT1/cmr/m/n/12 Travis Ga-gie schl[]agt ei-ne Me-tho-de zur Er-stel-lung ei-nes
  ad-ap-ti-ven Shannon-Kodierungssystems
  []
@@ -1111,12 +1110,6 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 30--31
 
 
 [9])
-Overfull \hbox (39.51042pt too wide) in paragraph at lines 38--5
-\OT1/cmr/m/n/12 Luis Rue-da schl[]agt zwei ver-schie-de-ne M[]oglichkeiten vor,
- um ein ad-ap-ti-ves Fano-Kodierungssystem
- []
-
-
 
 [10 <./fanoTree.png>] (gerHuffman.tex
 <huffmanTree.png, id=51, 1927.2pt x 1084.05pt>
@@ -1131,15 +1124,21 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 47--48
 
 
 
-[11]))
-Overfull \hbox (8.5649pt too wide) in paragraph at lines 57--30
-\OT1/cmr/m/n/12 zur sta-ti-schen Ver-si-on ein Sys-tem, das die Kon-struk-ti-on
- des Huffman-Baums an []Anderungen
+[11]
+
+[12 <./huffmanTree.png>]))
+
+[13] (gerHigherorder.tex
+Overfull \hbox (38.85335pt too wide) in paragraph at lines 2--2
+[][][]\OT1/cmr/m/n/12 eingabe/problem 
  []
 
 
+Overfull \hbox (38.85335pt too wide) in paragraph at lines 2--2
+[][][]\OT1/cmr/m/n/12 eingabe/problem 
+ []
 
-[12 <./huffmanTree.png>] (gerHigherorder.tex (dictionaryBased.tex
+(dictionaryBased.tex
 Overfull \hbox (20.898pt too wide) in paragraph at lines 4--4
 [][][]\OT1/cmr/m/n/12 LZ77/Deflate[]  
  []
@@ -1155,7 +1154,7 @@ Overfull \hbox (34.94102pt too wide) in paragraph at lines 2--3
 rrows-Wheeler-Transformation
  []
 
-<blockSorting.png, id=59, 804.75656pt x 220.57407pt>
+<blockSorting.png, id=63, 804.75656pt x 220.57407pt>
 File: blockSorting.png Graphic file (type png)
 <use blockSorting.png>
 Package pdftex.def Info: blockSorting.png  used on input line 6.
@@ -1167,57 +1166,61 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 6--7
 
 ) (grammarBased.tex
 
-[13 <./blockSorting.png>]) (predictionPartialMatching.tex
-Overfull \hbox (5.95131pt too wide) in paragraph at lines 8--9
-[]| \OT1/cmr/m/n/12 Ak-tua-li-sie-ren Sie die Wahr-schein-lich-keits-ver-tei-lu
-ng und den ent-spre-chen-den Vine-
- []
+[14 <./blockSorting.png>]) (predictionPartialMatching.tex
 
-<ppm.png, id=65, 759.58781pt x 284.56313pt>
+[15]
+<ppm.png, id=72, 759.58781pt x 284.56313pt>
 File: ppm.png Graphic file (type png)
 <use ppm.png>
-Package pdftex.def Info: ppm.png  used on input line 16.
+Package pdftex.def Info: ppm.png  used on input line 22.
 (pdftex.def)             Requested size: 500.77129pt x 187.60815pt.
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 16--17
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 22--23
  [][] 
  []
 
 ))
 
-[14] (ergebnisse.tex
+[16 <./ppm.png>]
+
+[17] (ergebnisse.tex
 Overfull \hbox (8.62764pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/17.28 Vergleich der ur-spr[]unglichen Kom-pres-si-ons-al-go-rit
 h-
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 )
 
-[15 <./ppm.png>] (gerConclusion.tex)
+[18] (gerConclusion.tex)
 
-[16]
+[19]
 
-[17] (gerMain.aux)
+[20] (gerMain.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                gerMain
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'gerMain.run.xml'.
 \openout1 = `gerMain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27211 strings out of 468130
- 554009 string characters out of 5433965
- 1389262 words of memory out of 5000000
- 55386 multiletter control sequences out of 15000+600000
+ 27222 strings out of 468130
+ 554356 string characters out of 5433965
+ 1390516 words of memory out of 5000000
+ 55397 multiletter control sequences out of 15000+600000
  635121 words of font info for 69 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,14n,101p,4402b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1237,9 +1240,9 @@ amsfonts/cm/cmsy10.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/pu
 blic/amsfonts/cm/cmtt12.pfb>
-Output written on gerMain.pdf (17 pages, 501376 bytes).
+Output written on gerMain.pdf (20 pages, 510224 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
+ 154 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

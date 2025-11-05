@@ -1,5 +1,6 @@
 \subsection{Shannon Codierung}
-Auch wenn die von Claude E. Shannon vorgeschlagene Shannon-Methode aufgrund ihrer Ineffizienz hinsichtlich der resultierenden Kompressionsgröße nicht häufig verwendet wird, hat sie dennoch eine gewisse Relevanz in diesem Bereich. Dieses System liefert eine eindeutige Zahlenfolge, indem es eine kumulative Wahrscheinlichkeitsfunktion $P_i$ verwendet und dann die ersten $l_i$ Ziffern der $r$-ten Dezimaldarstellung der kumulativen Wahrscheinlichkeitsfunktion nimmt, um das entsprechende Codewort zu erstellen\footnote{\cite{rueda2002advances} p.52-53: 2.4.2 Shannon's Method; \cite{shannonMathematicalCommunication} p.401-403: 9. The Fundamental Theorem for a Noiseless Channel}.
+Auch wenn die von Claude E. Shannon vorgeschlagene Shannon-Methode aufgrund ihrer Ineffizienz hinsichtlich der resultierenden Kompressionsgröße nicht häufig verwendet wird, hat sie dennoch eine gewisse Relevanz in diesem Bereich.
+Dieses Verfahren ordnet jedem Symbol über eine kumulative Wahrscheinlichkeitsfunktion $P_i$ einen eindeutigen Abschnitt im Intervall $[0;1[$ zu und erzeugt daraus eine Zahlenfolge, die als Grundlage für die Codewörter dient\footnote{\cite{rueda2002advances} p.52-53: 2.4.2 Shannon's Method; \cite{shannonMathematicalCommunication} p.401-403: 9. The Fundamental Theorem for a Noiseless Channel}. Die kumulative Wahrscheinlichkeitsfunktion wird rekursiv definiert als:
 
 \begin{equation}
 	P_i = \left\{
@@ -10,12 +11,15 @@ Auch wenn die von Claude E. Shannon vorgeschlagene Shannon-Methode aufgrund ihre
 	\right.
 \end{equation}
 
+Die Länge jedes Codeworts ergibt sich aus der Wahrscheinlichkeit des jeweiligen Symbols nach:
 
 \begin{equation}
 	l_i=\lceil log_r(p_i^{-1})\rceil
 \end{equation}
 
-Shannon stellt außerdem fest, dass mit zunehmender Länge $N$ unserer Eingabe die durchschnittliche Länge des Codeworts $H'$ sich der Entropie $H$ annähert.
+wobei seltener auftretende Symbole längere Codewörter erhalten.\\
+
+Shannon stellt außerdem fest, dass mit zunehmender Länge $N$, sich die durchschnittliche Codewortlänge $H'$ der Entropie $H$ nähert, was zeigt, dass Shannons Methode zwar nicht optimal, aber asymptotisch effizient ist.
 
 \begin{equation}
 	H'=\frac{1}{N} \sum(m_s p_s)
@@ -30,7 +34,7 @@ Hier ist $p_s$ der Wert für die kumulative Wahrscheinlichkeitsfunktion $P_i$. $
 	H \leq H' < H + \frac{1}{N}
 \end{equation}
 
-Wenn diese Annahme richtig ist, bestätigt dies die Intuition, dass ein Komprimierungssystem bei längeren Eingaben umso effektiver ist, auch wenn das Komprimierungssystem nicht optimal ist. Es ist immer noch zu beachten, dass der Wert für die durchschnittliche Codewortlänge jedoch niemals unter den Wert für die Entropie $H$ fallen kann, ohne dass Informationen verloren gehen.
+Damit liefert Shannon zwar kein optimales, aber ein einfach berechenbares Codierungssystem. Shannon beschreibt auch die Grenzen der theoretischen Effizienz und bildet die Grundlagen für spätere Verfahren.
 
 \subsubsection{Beispiel: Statisches Shannon Kodierung}
 
@@ -60,4 +64,4 @@ Eingabe:
 
 \subsubsection{Adaptive Shannon Kodierung}
 
-Travis Gagie schlägt eine Methode zur Erstellung eines adaptiven Shannon-Kodierungssystems vor. Bei dieser Methode werden die Aufgaben in Vordergrund- und Hintergrundaufgaben unterteilt. Die Vordergrundaufgabe berücksichtigt das Gewicht der vorherigen Zeichenanzahl und aktualisiert die Gewichte entsprechend dem neu eingegebenen Zeichen. Befindet sich das Zeichen noch nicht im Kodierungsschema, wird der Knoten zur Zeichenanzahl hinzugefügt. Im Hintergrund wird für jedes im Vordergrund verarbeitete Zeichen ein Zeichen im Hintergrund verarbeitet. Die Gewichtung eines bestimmten Zeichens $a$ wird dann aktualisiert, wenn das Zeichen zuvor aufgetreten ist, oder es wird mit der Gewichtung, die der Wahrscheinlichkeit des Zeichens entspricht, zum Komprimierungsbaum hinzugefügt\footnote{\cite{gagie2004dynamic} p.3-4: III Dynamic Shannon Coding}. Dieses System ähnelt dem adaptiven Fano-Kodierungssystem mit der Brute-Force-Methode, das später behandelt wird. 
+Travis Gagie schlägt eine Methode zur Erstellung eines adaptiven Shannon-Kodierungssystems vor. Bei dieser Methode werden die Aufgaben in Vordergrund- und Hintergrundprozesse unterteilt. Die Vordergrundaufgabe berücksichtigt das Gewicht der vorherigen Zeichenanzahl und aktualisiert die Gewichte entsprechend dem neu eingegebenen Zeichen. Befindet sich das Zeichen noch nicht im Kodierungsschema, wird der Knoten zur Zeichenanzahl hinzugefügt. Im Hintergrund wird parallel für jedes im Vordergrund verarbeitete Zeichen ein Zeichen nachgeführt, sodass die Gewichtungen kontinuierlich an die tatsächliche Symbolverteilung angepasst werden. Die Gewichtung eines bestimmten Zeichens $a$ wird also jedes Mal aktualisiert, wenn es auftritt, oder neu mit einem Gewicht eingefügt, das seiner geschätzten Wahrscheinlichkeit entspricht. Diese Trennung ermöglicht es, die Wahrscheinlichkeitsverteilung laufend zu aktualisieren, ohne den gesamten Kodierungsbaum neu zu berechnen\footnote{\cite{gagie2004dynamic} p.3-4: III Dynamic Shannon Coding}. 
