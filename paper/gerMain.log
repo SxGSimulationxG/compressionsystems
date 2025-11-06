@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  6 NOV 2025 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  6 NOV 2025 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1062,26 +1062,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
 )
 
-[2] (gerMain.toc)
+[2] (kiNutzung.tex)
+
+[3] (gerMain.toc)
 \tf@toc=\write5
 \openout5 = `gerMain.toc'.
 
 
 
-[3] (einleitung.tex
+[4] (einleitung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
 
 
-[4]
+[5]
 
-[5])
+[6])
 
-[6] (kompressionssysteme.tex (gerShannon.tex
+[7] (kompressionssysteme.tex (gerShannon.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
@@ -1094,10 +1101,10 @@ Overfull \hbox (20.72874pt too wide) in paragraph at lines 67--3
 
 
 
-[7]
+[8]
 
-[8] (gerFano.tex
-<fanoTree.png, id=42, 1927.2pt x 1084.05pt>
+[9] (gerFano.tex
+<fanoTree.png, id=45, 1927.2pt x 1084.05pt>
 File: fanoTree.png Graphic file (type png)
 <use fanoTree.png>
 Package pdftex.def Info: fanoTree.png  used on input line 30.
@@ -1109,10 +1116,10 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 30--31
 
 
 
-[9])
+[10])
 
-[10 <./fanoTree.png>] (gerHuffman.tex
-<huffmanTree.png, id=51, 1927.2pt x 1084.05pt>
+[11 <./fanoTree.png>] (gerHuffman.tex
+<huffmanTree.png, id=54, 1927.2pt x 1084.05pt>
 File: huffmanTree.png Graphic file (type png)
 <use huffmanTree.png>
 Package pdftex.def Info: huffmanTree.png  used on input line 47.
@@ -1124,29 +1131,19 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 47--48
 
 
 
-[11]
+[12]
 
-[12 <./huffmanTree.png>]))
+[13 <./huffmanTree.png>]))
 
-[13]
+[14]
 
-[14] (gerHigherorder.tex (dictionaryBased.tex
-Overfull \hbox (20.898pt too wide) in paragraph at lines 4--4
-[][][]\OT1/cmr/m/n/12 LZ77/Deflate[]  
- []
-
-
-Overfull \hbox (20.898pt too wide) in paragraph at lines 4--4
-[][][]\OT1/cmr/m/n/12 LZ77/Deflate[]  
- []
-
-) (blockSorting.tex
+[15] (gerHigherorder.tex (dictionaryBased.tex) (blockSorting.tex
 Overfull \hbox (34.94102pt too wide) in paragraph at lines 2--3
 \OT1/cmr/m/n/12 Der Block-Sorting-Kompressionsalgorithmus, auch be-kannt als Bu
 rrows-Wheeler-Transformation
  []
 
-<blockSorting.png, id=66, 804.75656pt x 220.57407pt>
+<blockSorting.png, id=69, 804.75656pt x 220.57407pt>
 File: blockSorting.png Graphic file (type png)
 <use blockSorting.png>
 Package pdftex.def Info: blockSorting.png  used on input line 6.
@@ -1158,10 +1155,10 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 6--7
 
 ) (grammarBased.tex
 
-[15 <./blockSorting.png>]) (predictionPartialMatching.tex
+[16 <./blockSorting.png>]) (predictionPartialMatching.tex
 
-[16]
-<ppm.png, id=75, 759.58781pt x 284.56313pt>
+[17]
+<ppm.png, id=78, 759.58781pt x 284.56313pt>
 File: ppm.png Graphic file (type png)
 <use ppm.png>
 Package pdftex.def Info: ppm.png  used on input line 22.
@@ -1173,9 +1170,9 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 22--23
 
 
 
-[17 <./ppm.png>]))
+[18 <./ppm.png>]))
 
-[18] (ergebnisse.tex
+[19] (ergebnisse.tex
 Overfull \hbox (8.62764pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/17.28 Vergleich der ur-spr[]unglichen Kom-pres-si-ons-al-go-rit
 h-
@@ -1183,11 +1180,13 @@ h-
 
 )
 
-[19] (gerConclusion.tex)
+[20] (gerConclusion.tex)
 
-[20]
+[21]
 
-[21] (gerMain.aux)
+[22]
+
+[23] (gerMain.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
@@ -1201,10 +1200,10 @@ Package logreq Info: Writing requests to 'gerMain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27202 strings out of 468130
- 553892 string characters out of 5433965
- 1390266 words of memory out of 5000000
- 55377 multiletter control sequences out of 15000+600000
+ 27216 strings out of 468130
+ 554379 string characters out of 5433965
+ 1390400 words of memory out of 5000000
+ 55388 multiletter control sequences out of 15000+600000
  635121 words of font info for 69 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,14n,101p,3888b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1224,9 +1223,9 @@ amsfonts/cm/cmsy10.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/pu
 blic/amsfonts/cm/cmtt12.pfb>
-Output written on gerMain.pdf (21 pages, 511946 bytes).
+Output written on gerMain.pdf (23 pages, 516396 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
+ 163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

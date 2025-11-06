@@ -58,7 +58,7 @@
       \field{journaltitle}{Computer Science Department, Carnegie Mellon University}
       \field{title}{Introduction to data compression}
       \field{volume}{54}
-      \field{year}{2001}
+      \field{year}{2013}
     \endentry
     \entry{charikar2005smallest}{article}{}{}
       \name{author}{7}{}{%
@@ -379,6 +379,44 @@
       \field{pages}{1746\bibrangedash 1750}
       \range{pages}{5}
     \endentry
+    \entry{oswal2016deflate}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5f0d481940f8a0b798e3fecd149b2436}{%
+           family={Oswal},
+           familyi={O\bibinitperiod},
+           given={Savan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=63d38fff938e8af73769c6b908e9f0d4}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Anjali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=50aa05dd6605b551a413780c0ae99c45}{%
+           family={Kumari},
+           familyi={K\bibinitperiod},
+           given={Kirthi},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{fullhash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{fullhashraw}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{bibnamehash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{authorbibnamehash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{authornamehash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{authorfullhash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{authorfullhashraw}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Engineering Research and General Science}
+      \field{number}{1}
+      \field{title}{Deflate compression algorithm}
+      \field{volume}{4}
+      \field{year}{2016}
+      \field{pages}{430\bibrangedash 436}
+      \range{pages}{7}
+    \endentry
     \entry{pivkinadiscovery}{article}{}{}
       \name{author}{1}{}{%
         {{hash=e145b9b8e2f4c7c734051303f95c1a0f}{%
@@ -465,6 +503,32 @@
       \field{title}{Advances in data compression and pattern recognition}
       \field{type}{phdthesis}
       \field{year}{2002}
+    \endentry
+    \entry{seward1996bzip2}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b70f7968a027ed142ee1d8a2a34e33bc}{%
+           family={Seward},
+           familyi={S\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{fullhash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{fullhashraw}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{bibnamehash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{authorbibnamehash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{authornamehash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{authorfullhash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{authorfullhashraw}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{http://www. bzip. org}
+      \field{title}{bzip2 and libbzip2}
+      \field{year}{1996}
+      \field{pages}{8\bibrangedash 18}
+      \range{pages}{11}
     \endentry
     \entry{shakespeareCompleteWorks}{book}{}{}
       \name{author}{1}{}{%

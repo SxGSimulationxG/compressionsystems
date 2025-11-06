@@ -8,4 +8,4 @@ Der Block-Sorting-Kompressionsalgorithmus, auch bekannt als Burrows-Wheeler-Tran
 	\label{fig:blockSorting}
 \end{figure}
 
-Der eigentliche Vorteil dieser Methode liegt darin, dass die transformierte Sequenz $T$ häufig viele gleiche oder ähnliche Zeichenfolgen enthält. Dadurch wird sie besonders gut für nachgelagerte Verfahren wie Move-to-Front oder Huffman-Codierung geeignet. Die BWT selbst komprimiert die Daten also nicht direkt, sondern ordnet sie so um, dass andere Kodierungsverfahren ihre Redundanz wesentlich besser ausnutzen können.
+Der eigentliche Vorteil dieser Methode liegt darin, dass die transformierte Sequenz $T$ häufig viele gleiche oder ähnliche Zeichenfolgen enthält. Dadurch wird sie besonders gut für nachgelagerte Verfahren wie Move-to-Front oder Huffman-Codierung geeignet, wie zum Beispiel beim bzip2 Format\footnote{\cite{seward1996bzip2} p.2: 1 Introduction}. Die BWT selbst komprimiert die Daten also nicht direkt, sondern ordnet sie so um, dass andere Kodierungsverfahren ihre Redundanz wesentlich besser ausnutzen können.

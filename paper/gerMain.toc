@@ -1,29 +1,29 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{4}{}%
-\contentsline {subsection}{\numberline {1.1}Zielsetzung}{5}{}%
-\contentsline {subsection}{\numberline {1.2}Grundlegende Prinzipien}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}Unterschied zwischen verlustfreie und verlustbehaftete Kompressionssysteme}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}Informationsentropie}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.3}Unterschied zwischen Higher-order und Zeroth-order Systemen}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.4}Unterschied zwischen statischen und adaptiven Kodierungssystemen}{6}{}%
-\contentsline {subsubsection}{\numberline {1.2.5}Optimalität}{6}{}%
-\contentsline {subsubsection}{\numberline {1.2.6}Präfixfreiheit}{6}{}%
-\contentsline {section}{\numberline {2}Grundlegende Kompressionssysteme}{7}{}%
-\contentsline {subsection}{\numberline {2.1}Shannon Codierung}{7}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}Beispiel: Statisches Shannon Kodierung}{7}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}Adaptive Shannon Kodierung}{8}{}%
-\contentsline {subsection}{\numberline {2.2}Fano Codierung}{9}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Beispiel: Statisches Fano Kodierung}{9}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Adaptive Fano Codierung}{10}{}%
-\contentsline {subsection}{\numberline {2.3}Huffman Codierung}{11}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Beispiel: Statisches Huffman Codierung}{11}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}Adaptive Huffman Codierung}{13}{}%
-\contentsline {subsection}{\numberline {2.4}Unterschied in der Effizienz zwischen statischen und adaptiven Kodierungssystemen}{13}{}%
-\contentsline {section}{\numberline {3}Higher-order Systeme}{15}{}%
-\contentsline {subsection}{\numberline {3.1}Dictionary Based Kodierung}{15}{}%
-\contentsline {subsection}{\numberline {3.2}Block-Sorting Kompressionsalgorithmus}{15}{}%
-\contentsline {subsection}{\numberline {3.3}Grammatikbasierte Codierung}{16}{}%
-\contentsline {subsection}{\numberline {3.4}Prediction with Partial Matching}{17}{}%
-\contentsline {subsection}{\numberline {3.5}Weitere Higher-order Systeme}{18}{}%
-\contentsline {section}{\numberline {4}Vergleich der ursprünglichen Kompressionsalgorithmen}{19}{}%
-\contentsline {section}{\numberline {5}Schluss}{20}{}%
+\contentsline {section}{\numberline {1}Einleitung}{5}{}%
+\contentsline {subsection}{\numberline {1.1}Zielsetzung}{6}{}%
+\contentsline {subsection}{\numberline {1.2}Grundlegende Prinzipien}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Unterschied zwischen verlustfreie und verlustbehaftete Kompressionssysteme}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Informationsentropie}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Unterschied zwischen Higher-order und Zeroth-order Systemen}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.4}Unterschied zwischen statischen und adaptiven Kodierungssystemen}{7}{}%
+\contentsline {subsubsection}{\numberline {1.2.5}Optimalität}{7}{}%
+\contentsline {subsubsection}{\numberline {1.2.6}Präfixfreiheit}{7}{}%
+\contentsline {section}{\numberline {2}Grundlegende Kompressionssysteme}{8}{}%
+\contentsline {subsection}{\numberline {2.1}Shannon Codierung}{8}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Beispiel: Statisches Shannon Kodierung}{8}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Adaptive Shannon Kodierung}{9}{}%
+\contentsline {subsection}{\numberline {2.2}Fano Codierung}{10}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Beispiel: Statisches Fano Kodierung}{10}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Adaptive Fano Codierung}{11}{}%
+\contentsline {subsection}{\numberline {2.3}Huffman Codierung}{12}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Beispiel: Statisches Huffman Codierung}{12}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Adaptive Huffman Codierung}{14}{}%
+\contentsline {subsection}{\numberline {2.4}Unterschied in der Effizienz zwischen statischen und adaptiven Kodierungssystemen}{14}{}%
+\contentsline {section}{\numberline {3}Higher-order Systeme}{16}{}%
+\contentsline {subsection}{\numberline {3.1}Dictionary Based Kodierung}{16}{}%
+\contentsline {subsection}{\numberline {3.2}Block-Sorting Kompressionsalgorithmus}{16}{}%
+\contentsline {subsection}{\numberline {3.3}Grammatikbasierte Codierung}{17}{}%
+\contentsline {subsection}{\numberline {3.4}Prediction with Partial Matching}{18}{}%
+\contentsline {subsection}{\numberline {3.5}Weitere Higher-order Systeme}{19}{}%
+\contentsline {section}{\numberline {4}Vergleich der ursprünglichen Kompressionsalgorithmen}{20}{}%
+\contentsline {section}{\numberline {5}Schluss}{21}{}%
