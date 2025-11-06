@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {3.1}Dictionary Based Kodierung}{15}{}%
 \contentsline {subsection}{\numberline {3.2}Block-Sorting Kompressionsalgorithmus}{15}{}%
 \contentsline {subsection}{\numberline {3.3}Grammatikbasierte Codierung}{16}{}%
-\contentsline {subsection}{\numberline {3.4}Prediction with Partial Matching}{16}{}%
+\contentsline {subsection}{\numberline {3.4}Prediction with Partial Matching}{17}{}%
 \contentsline {subsection}{\numberline {3.5}Weitere Higher-order Systeme}{18}{}%
 \contentsline {section}{\numberline {4}Vergleich der ursprünglichen Kompressionsalgorithmen}{19}{}%
 \contentsline {section}{\numberline {5}Schluss}{20}{}%

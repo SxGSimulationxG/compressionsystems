@@ -27,3 +27,5 @@ Dieses Verfahren lässt sich grafisch darstellen: Die durchgezogenen Linien zeig
 Der Vorteil dieser Methode liegt darin, dass sie die Wahrscheinlichkeitsverteilung jedes Symbols dynamisch an den tatsächlichen Kontext der Daten anpasst. Dadurch kann PPM sehr präzise Vorhersagen über das nächste Zeichen treffen und so extrem effiziente Codierungen erzeugen. Insbesondere verbessert sich die Kompressionsleistung gegenüber einfacheren Modellen (wie Null- oder Erstordnungsmodellen), weil PPM Redundanzen über längere Zeichenfolgen hinweg erkennt und nutzt.
 Je tiefer der Kontext (also je größer die Tiefe $D$ des Tries), desto genauer kann der Algorithmus die Symbolwahrscheinlichkeiten abschätzen – allerdings auf Kosten höherer Rechenzeit und Speichernutzung.
 Insgesamt zählt PPM daher zu den effektivsten statistischen Verfahren für verlustfreie Datenkompression.
+
+Dieses Verfahren wird meistens für die Kompression und Verarbeitung von menschlich geschriebenen Texten verwendet\footnote{\cite{steinruecken2015lossless} p.139: Applications of PPM-like Algorithms}.
