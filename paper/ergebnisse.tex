@@ -1,38 +1,16 @@
 \section{Vergleich der ursprünglichen Kompressionsalgorithmen}
-
-\begin{table}[h]
+\begin{figure}[ht]
 	\centering
-	\begin{tabular}{ccc}
-		\textbf{Beispiel} & \textbf{Speicherbedarf}\tablefootnote{Berechnet Anzahl der Eingabezeichen multipliziert mit 8} & \textbf{Entropie $H$} \\
-		Wordnik\tablefootnote{\cite{wordnikWords}: Wordnik Liste öffentlich zugänglicher englischer Wörter} &  $20.5$ & $4.25$ \\
-		Shakespeare\tablefootnote{\cite{shakespeareCompleteWorks}: Die gesammelten Werke von William Shakespeare} & $44.6$ & $4.84$ \\
-	\end{tabular}
-	\caption{Liste mit Beispielen zum Vergleich der verschiedenen Kompressionssysteme mit ihrer entsprechenden Speichernutzung in Mb.}
-	\label{tab:placeholder}
-\end{table}
+	\includegraphics[width=0.8\linewidth]{OriginalStorageSizevsAvgCodeWordLength}
+	\caption{Mit Google Sheets erstellt}
+	\label{fig:plot1}
+\end{figure}
 
-\begin{table}[h]
+\begin{figure}[ht]
 	\centering
-	\begin{tabular}{c|c|c|c|c}
-		\textbf{Kompressionssystem} & \textbf{Prozesse\tablefootnote{Berechnungsprozesse sind relativ, verschiedene Arten von Prozessen dauern unterschiedlich lange, daher sollte diese Zahl eher vage interpretiert werden.}} & \textbf{Größe\tablefootnote{Speichernutzung nach Komprimierung ohne Berücksichtigung des Speicherplatzes, der vom Komprimierungsbaum oder Kodierungsschema belegt wird. Der Speicherplatz, den diese im Verhältnis zu einer größeren Datenmenge beanspruchen, ist so gering, dass wir diesen geringen zusätzlichen Speicherbedarf im Grunde ignorieren können.}} & \textbf{$\overline{L}$ Avg. L\tablefootnote{Durchschnittscodewortlänge}} & \textbf{Prozentsatz\tablefootnote{Prozentualer Anteil der komprimierten Speichergröße im Vergleich zum Zeichensatz in Tabelle 4.}} \\
-		Huffman & $2565462$ & $11.0$ & $4.29$ & $53.6\%$ \\
-		Shannon & $2565500$ & $12.0$ & $4.70$ & $58.7\%$ \\
-		Fano & $2565349$ & $11.4$ & $4.44$ & $55.5\%$ \\
-	\end{tabular}
-	\caption{Vergleich der verschiedenen Kompressionssysteme mit Wordnik}
-	\label{tab:placeholder}
-\end{table}
+	\includegraphics[width=0.8\linewidth]{EntropyvsAvgCodeWordLength}
+	\caption{Mit Google Sheets erstellt}
+	\label{fig:plot2}
+\end{figure}
 
-\begin{table}[h]
-	\centering
-	\begin{tabular}{c|c|c|c|c}
-		\textbf{Kompressionssystem} & \textbf{Prozesse} & \textbf{Größe} & \textbf{$\overline{L}$ Avg. L} & \textbf{Prozentsatz} \\
-		Huffman & $5575693$ & $27.2$ & $4.88$ & $61.0\%$ \\
-		Shannon & $5576446$ & $29.6$ & $5.31$ & $66.4\%$ \\
-		Fano & $5575268$ & $27.4$ & $4.91$ & $61.4\%$ \\
-	\end{tabular}
-	\caption{Vergleich der verschiedenen Kompressionssysteme mit Shakespeare}
-	\label{tab:placeholder}
-\end{table}
-
-\todo{Plot of results}
+In Abbildung 5 lässt sich kein klarer Zusammenhang zwischen dem anfänglichen Speicherbedarf und der endgültigen Kompressionsgröße erkennen. In Abbildung 6 hingegen zeigt sich ein deutlicher Zusammenhang zwischen der Informationsentropie und der Kompressionsgröße beziehungsweise der durchschnittlichen Codewortlänge. In beiden Abbildungen wird deutlich, dass das Shannon-Verfahren deutlich ineffizienter ist als die Verfahren von Huffman und Fano, die wiederum eine sehr ähnliche Effizienz aufweisen. Dabei liegt Huffman meist knapp unter Fano und ist somit etwas effizienter.

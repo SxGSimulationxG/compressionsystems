@@ -1,7 +1,7 @@
 \subsection{Prediction with Partial Matching}
 Die Methode der Prediction with Partial Matching (PPM) ist ein kontextbasiertes Verfahren zur Wahrscheinlichkeitsvorhersage und Codierung von Symbolen. Sie verwendet dabei eine spezielle Baumstruktur, einen sogenannten Trie, mit einer maximalen Tiefe $D$. Jeder Knoten im Baum repräsentiert einen Kontext, also eine bestimmte Folge vorheriger Zeichen, und enthält eine eigene Wahrscheinlichkeitsverteilung der möglichen Folgesymbole. Zusätzlich besitzt jeder Knoten sogenannte Vine-Zeiger, die auf übergeordnete Knoten verweisen und so den Übergang zu kürzeren Kontexten ermöglichen.
 
-Der Algorithmus arbeitet in mehreren Schritten\footnote{\cite{steinruecken2015lossless}, p.111–113: 6.3.1 Basic Operation}:
+Der Algorithmus arbeitet in mehreren Schritten\footnote{\cite{steinruecken2015lossless}, S.111–113: 6.3.1 Basic Operation}:
 
 \begin{enumerate}
 	\item Initialisieren Sie einen leeren Trie.
@@ -28,4 +28,4 @@ Der Vorteil dieser Methode liegt darin, dass sie die Wahrscheinlichkeitsverteilu
 Je tiefer der Kontext (also je größer die Tiefe $D$ des Tries), desto genauer kann der Algorithmus die Symbolwahrscheinlichkeiten abschätzen – allerdings auf Kosten höherer Rechenzeit und Speichernutzung.
 Insgesamt zählt PPM daher zu den effektivsten statistischen Verfahren für verlustfreie Datenkompression.
 
-Dieses Verfahren wird meistens für die Kompression und Verarbeitung von menschlich geschriebenen Texten verwendet\footnote{\cite{steinruecken2015lossless} p.139: Applications of PPM-like Algorithms}.
+Dieses Verfahren wird meistens für die Kompression und Verarbeitung von menschlich geschriebenen Texten verwendet\footnote{\cite{steinruecken2015lossless} S.139: Applications of PPM-like Algorithms}.

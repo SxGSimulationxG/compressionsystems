@@ -1,6 +1,6 @@
 \subsection{Shannon Codierung}
 Auch wenn die von Claude E. Shannon vorgeschlagene Shannon-Methode aufgrund ihrer Ineffizienz hinsichtlich der resultierenden Kompressionsgröße nicht häufig verwendet wird, hat sie dennoch eine gewisse Relevanz in diesem Bereich.
-Dieses Verfahren ordnet jedem Symbol über eine kumulative Wahrscheinlichkeitsfunktion $P_i$ einen eindeutigen Abschnitt im Intervall $[0;1[$ zu und erzeugt daraus eine Zahlenfolge, die als Grundlage für die Codewörter dient\footnote{\cite{rueda2002advances} p.52-53: 2.4.2 Shannon's Method; \cite{shannonMathematicalCommunication} p.401-403: 9. The Fundamental Theorem for a Noiseless Channel}. Die kumulative Wahrscheinlichkeitsfunktion wird rekursiv definiert als:
+Dieses Verfahren ordnet jedem Symbol über eine kumulative Wahrscheinlichkeitsfunktion $P_i$ einen eindeutigen Abschnitt im Intervall $[0;1[$ zu und erzeugt daraus eine Zahlenfolge, die als Grundlage für die Codewörter dient\footnote{\cite{rueda2002advances} S.52f.: 2.4.2 Shannon's Method; \cite{shannonMathematicalCommunication} S.401-403: 9. The Fundamental Theorem for a Noiseless Channel}. Die kumulative Wahrscheinlichkeitsfunktion wird rekursiv definiert als:
 
 \begin{equation}
 	P_i = \left\{
@@ -58,10 +58,10 @@ Eingabe:
 		g & 0.05 & 0.93 & 5 & $0.11101\dots$ & 11101 \\
 		h & 0.02 & 0.98 & 6 & $0.111110\dots$ & 111110 \\
 	\end{tabular}
-	\caption{Angepasst aus Beispiel von \cite{huffmanOriginal} p.1101: Table III}
+	\caption{Angepasst aus Beispiel von \cite{huffmanOriginal} S.1101: Table III}
 	\label{tab:placeholder}
 \end{table}
 
 \subsubsection{Adaptive Shannon Kodierung}
 
-Travis Gagie schlägt eine Methode zur Erstellung eines adaptiven Shannon-Kodierungssystems vor. Bei dieser Methode werden die Aufgaben in Vordergrund- und Hintergrundprozesse unterteilt. Die Vordergrundaufgabe berücksichtigt das Gewicht der vorherigen Zeichenanzahl und aktualisiert die Gewichte entsprechend dem neu eingegebenen Zeichen. Befindet sich das Zeichen noch nicht im Kodierungsschema, wird der Knoten zur Zeichenanzahl hinzugefügt. Im Hintergrund wird parallel für jedes im Vordergrund verarbeitete Zeichen ein Zeichen nachgeführt, sodass die Gewichtungen kontinuierlich an die tatsächliche Symbolverteilung angepasst werden. Die Gewichtung eines bestimmten Zeichens $a$ wird also jedes Mal aktualisiert, wenn es auftritt, oder neu mit einem Gewicht eingefügt, das seiner geschätzten Wahrscheinlichkeit entspricht. Diese Trennung ermöglicht es, die Wahrscheinlichkeitsverteilung laufend zu aktualisieren, ohne den gesamten Kodierungsbaum neu zu berechnen\footnote{\cite{gagie2004dynamic} p.3-4: III Dynamic Shannon Coding}. 
+Travis Gagie schlägt eine Methode zur Erstellung eines adaptiven Shannon-Kodierungssystems vor. Bei dieser Methode werden die Aufgaben in Vordergrund- und Hintergrundprozesse unterteilt. Die Vordergrundaufgabe berücksichtigt das Gewicht der vorherigen Zeichenanzahl und aktualisiert die Gewichte entsprechend dem neu eingegebenen Zeichen. Befindet sich das Zeichen noch nicht im Kodierungsschema, wird der Knoten zur Zeichenanzahl hinzugefügt. Im Hintergrund wird parallel für jedes im Vordergrund verarbeitete Zeichen ein Zeichen nachgeführt, sodass die Gewichtungen kontinuierlich an die tatsächliche Symbolverteilung angepasst werden. Die Gewichtung eines bestimmten Zeichens $a$ wird also jedes Mal aktualisiert, wenn es auftritt, oder neu mit einem Gewicht eingefügt, das seiner geschätzten Wahrscheinlichkeit entspricht. Diese Trennung ermöglicht es, die Wahrscheinlichkeitsverteilung laufend zu aktualisieren, ohne den gesamten Kodierungsbaum neu zu berechnen\footnote{\cite{gagie2004dynamic} S.3f.: III Dynamic Shannon Coding}. 

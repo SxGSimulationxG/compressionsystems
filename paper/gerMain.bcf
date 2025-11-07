@@ -2419,8 +2419,6 @@
     <bcf:citekey order="44" intorder="1">rueda2002advances</bcf:citekey>
     <bcf:citekey order="45" intorder="1">blelloch2001introduction</bcf:citekey>
     <bcf:citekey order="46" intorder="1">steinruecken2015lossless</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">wordnikWords</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">shakespeareCompleteWorks</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  7 NOV 2025 13:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  7 NOV 2025 19:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -931,15 +931,6 @@ LaTeX Warning: Label `tab:placeholder' multiply defined.
 
 LaTeX Warning: Label `tab:placeholder' multiply defined.
 
-
-LaTeX Warning: Label `tab:placeholder' multiply defined.
-
-
-LaTeX Warning: Label `tab:placeholder' multiply defined.
-
-
-LaTeX Warning: Label `tab:placeholder' multiply defined.
-
 )
 \openout1 = `gerMain.aux'.
 
@@ -1178,9 +1169,22 @@ Overfull \hbox (8.62764pt too wide) in paragraph at lines 1--1
 h-
  []
 
+<OriginalStorageSizevsAvgCodeWordLength.png, id=87, 602.25pt x 372.39125pt>
+File: OriginalStorageSizevsAvgCodeWordLength.png Graphic file (type png)
+<use OriginalStorageSizevsAvgCodeWordLength.png>
+Package pdftex.def Info: OriginalStorageSizevsAvgCodeWordLength.png  used on in
+put line 4.
+(pdftex.def)             Requested size: 364.19667pt x 225.20364pt.
+<EntropyvsAvgCodeWordLength.png, id=88, 602.25pt x 372.39125pt>
+File: EntropyvsAvgCodeWordLength.png Graphic file (type png)
+<use EntropyvsAvgCodeWordLength.png>
+Package pdftex.def Info: EntropyvsAvgCodeWordLength.png  used on input line 11.
+
+(pdftex.def)             Requested size: 364.19667pt x 225.20364pt.
 )
 
-[20] (gerConclusion.tex)
+[20 <./OriginalStorageSizevsAvgCodeWordLength.png> <./EntropyvsAvgCodeWordLengt
+h.png>] (gerConclusion.tex)
 
 [21]
 
@@ -1193,20 +1197,28 @@ L3 programming layer <2025-09-02>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                gerMain
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'gerMain.run.xml'.
 \openout1 = `gerMain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27216 strings out of 468130
- 554379 string characters out of 5433965
- 1390400 words of memory out of 5000000
- 55388 multiletter control sequences out of 15000+600000
+ 27156 strings out of 468130
+ 553419 string characters out of 5433965
+ 1390225 words of memory out of 5000000
+ 55328 multiletter control sequences out of 15000+600000
  635121 words of font info for 69 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,14n,101p,3888b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,14n,101p,3886b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\krkai\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><D:/.SoftwareDev/Software Files/miktex/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/public/amsfonts/cm
@@ -1223,9 +1235,9 @@ amsfonts/cm/cmsy10.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/pu
 blic/amsfonts/cm/cmtt12.pfb>
-Output written on gerMain.pdf (23 pages, 515942 bytes).
+Output written on gerMain.pdf (23 pages, 556888 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
+ 167 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
