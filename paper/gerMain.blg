@@ -1,25 +1,24 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'gerMain.blg'
-[202] biber-MSWIN64:342> INFO - === 
-[267] Biber.pm:421> INFO - Reading 'gerMain.bcf'
-[457] Biber.pm:1002> INFO - Found 21 citekeys in bib section 0
-[479] Biber.pm:4487> INFO - Processing section 0
-[496] Biber.pm:4678> INFO - Looking for bibtex file 'main.bib' for section 0
-[585] bibtex.pm:1713> INFO - LaTeX decoding ...
-[662] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
-[834] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[834] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[835] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[835] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
-[863] bbl.pm:676> INFO - Writing 'gerMain.bbl' with encoding 'UTF-8'
-[878] bbl.pm:779> INFO - Output to gerMain.bbl
-[878] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_VwTV\3b92c3a43883b50258e417775889aed6_16964.utf8, line 2, warning: 14 characters of junk seen at toplevel
-[878] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_VwTV\3b92c3a43883b50258e417775889aed6_16964.utf8, line 31, warning: 34 characters of junk seen at toplevel
-[878] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_VwTV\3b92c3a43883b50258e417775889aed6_16964.utf8, line 87, warning: 31 characters of junk seen at toplevel
-[878] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_VwTV\3b92c3a43883b50258e417775889aed6_16964.utf8, line 117, warning: 34 characters of junk seen at toplevel
-[878] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_VwTV\3b92c3a43883b50258e417775889aed6_16964.utf8, line 127, warning: 19 characters of junk seen at toplevel
-[878] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_VwTV\3b92c3a43883b50258e417775889aed6_16964.utf8, line 159, warning: 5 characters of junk seen at toplevel
-[878] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_VwTV\3b92c3a43883b50258e417775889aed6_16964.utf8, line 181, warning: 16 characters of junk seen at toplevel
-[879] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_VwTV\3b92c3a43883b50258e417775889aed6_16964.utf8, line 285, warning: 33 characters of junk seen at toplevel
-[879] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_VwTV\3b92c3a43883b50258e417775889aed6_16964.utf8, line 294, warning: 22 characters of junk seen at toplevel
-[879] Biber.pm:134> INFO - WARNINGS: 9
+[309] biber-MSWIN64:342> INFO - === 
+[424] Biber.pm:421> INFO - Reading 'gerMain.bcf'
+[562] Biber.pm:1002> INFO - Found 19 citekeys in bib section 0
+[579] Biber.pm:4487> INFO - Processing section 0
+[604] Biber.pm:4678> INFO - Looking for bibtex file 'main.bib' for section 0
+[668] bibtex.pm:1713> INFO - LaTeX decoding ...
+[723] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
+[898] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[898] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[898] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[898] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
+[915] bbl.pm:676> INFO - Writing 'gerMain.bbl' with encoding 'UTF-8'
+[925] bbl.pm:779> INFO - Output to gerMain.bbl
+[925] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_p3Cu\3b92c3a43883b50258e417775889aed6_19900.utf8, line 2, warning: 14 characters of junk seen at toplevel
+[925] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_p3Cu\3b92c3a43883b50258e417775889aed6_19900.utf8, line 31, warning: 34 characters of junk seen at toplevel
+[925] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_p3Cu\3b92c3a43883b50258e417775889aed6_19900.utf8, line 87, warning: 31 characters of junk seen at toplevel
+[925] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_p3Cu\3b92c3a43883b50258e417775889aed6_19900.utf8, line 117, warning: 34 characters of junk seen at toplevel
+[925] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_p3Cu\3b92c3a43883b50258e417775889aed6_19900.utf8, line 127, warning: 19 characters of junk seen at toplevel
+[925] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_p3Cu\3b92c3a43883b50258e417775889aed6_19900.utf8, line 159, warning: 5 characters of junk seen at toplevel
+[926] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_p3Cu\3b92c3a43883b50258e417775889aed6_19900.utf8, line 181, warning: 16 characters of junk seen at toplevel
+[926] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\krkai\AppData\Local\Temp\biber_tmp_p3Cu\3b92c3a43883b50258e417775889aed6_19900.utf8, line 285, warning: 33 characters of junk seen at toplevel
+[926] Biber.pm:134> INFO - WARNINGS: 8
