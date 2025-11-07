@@ -58,7 +58,7 @@
       \field{journaltitle}{Computer Science Department, Carnegie Mellon University}
       \field{title}{Introduction to data compression}
       \field{volume}{54}
-      \field{year}{2001}
+      \field{year}{2013}
     \endentry
     \entry{charikar2005smallest}{article}{}{}
       \name{author}{7}{}{%
@@ -120,6 +120,42 @@
       \field{year}{2005}
       \field{pages}{2554\bibrangedash 2576}
       \range{pages}{23}
+    \endentry
+    \entry{cleary1984comparison}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=05ecfa1bf8d51f78a4e2b50078fa59bf}{%
+           family={Cleary},
+           familyi={C\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b644769ef880ae7bc818a613238d0b56}{%
+           family={Witten},
+           familyi={W\bibinitperiod},
+           given={I},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{fullhash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{fullhashraw}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{bibnamehash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{authorbibnamehash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{authornamehash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{authorfullhash}{85c4d6e38d0192ac1be83ae39aebf927}
+      \strng{authorfullhashraw}{85c4d6e38d0192ac1be83ae39aebf927}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{number}{2}
+      \field{title}{A comparison of enumerative and adaptive codes}
+      \field{volume}{30}
+      \field{year}{1984}
+      \field{pages}{306\bibrangedash 315}
+      \range{pages}{10}
     \endentry
     \entry{fanoTransmissionInformation}{book}{}{}
       \name{author}{1}{}{%
@@ -239,17 +275,6 @@
       \field{pages}{1098\bibrangedash 1101}
       \range{pages}{4}
     \endentry
-    \entry{iso646ascii7bit}{manual}{}{}
-      \list{organization}{2}{%
-        {The International Organization for Standardization}%
-        {The International Electrotechnical Commission}%
-      }
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{labeltitlesource}{title}
-      \field{title}{ISO/IEC 646:1991 Information technology - ISO 7-bit coded character set for Information Interchange}
-      \field{year}{1991}
-    \endentry
     \entry{cnssGlossary}{manual}{}{}
       \name{author}{1}{}{%
         {{hash=bc6df18b4c851b5e8b215025a465cffc}{%
@@ -278,42 +303,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Committee on National Security Systems Glossary}
       \field{year}{2022}
-    \endentry
-    \entry{kieffer2000grammar}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=c4cc2b56bed90e998c34235128120220}{%
-           family={Kieffer},
-           familyi={K\bibinitperiod},
-           given={John\bibnamedelima C},
-           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=2b9549e7d83847c4da96a820fa9a522c}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={En-Hui},
-           giveni={E\bibinithyphendelim H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{fullhash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{fullhashraw}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{bibnamehash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{authorbibnamehash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{authornamehash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{authorfullhash}{cf03fd420472b5189f8f5b289649edf8}
-      \strng{authorfullhashraw}{cf03fd420472b5189f8f5b289649edf8}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Information Theory}
-      \field{number}{3}
-      \field{title}{Grammar-based codes: A new class of universal lossless source codes}
-      \field{volume}{46}
-      \field{year}{2000}
-      \field{pages}{737\bibrangedash 754}
-      \range{pages}{18}
     \endentry
     \entry{knuthDynamicHuffman}{article}{}{}
       \name{author}{1}{}{%
@@ -390,31 +379,43 @@
       \field{pages}{1746\bibrangedash 1750}
       \range{pages}{5}
     \endentry
-    \entry{mackenzie1980coded}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=e400185406df04442e8fbe072c79e935}{%
-           family={Mackenzie},
-           familyi={M\bibinitperiod},
-           given={Charles\bibnamedelima E},
-           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+    \entry{oswal2016deflate}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5f0d481940f8a0b798e3fecd149b2436}{%
+           family={Oswal},
+           familyi={O\bibinitperiod},
+           given={Savan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=63d38fff938e8af73769c6b908e9f0d4}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Anjali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=50aa05dd6605b551a413780c0ae99c45}{%
+           family={Kumari},
+           familyi={K\bibinitperiod},
+           given={Kirthi},
+           giveni={K\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Addison-Wesley Longman Publishing Co., Inc.}%
-      }
-      \strng{namehash}{e400185406df04442e8fbe072c79e935}
-      \strng{fullhash}{e400185406df04442e8fbe072c79e935}
-      \strng{fullhashraw}{e400185406df04442e8fbe072c79e935}
-      \strng{bibnamehash}{e400185406df04442e8fbe072c79e935}
-      \strng{authorbibnamehash}{e400185406df04442e8fbe072c79e935}
-      \strng{authornamehash}{e400185406df04442e8fbe072c79e935}
-      \strng{authorfullhash}{e400185406df04442e8fbe072c79e935}
-      \strng{authorfullhashraw}{e400185406df04442e8fbe072c79e935}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \strng{namehash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{fullhash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{fullhashraw}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{bibnamehash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{authorbibnamehash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{authornamehash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{authorfullhash}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \strng{authorfullhashraw}{9e52b7e456b5c89058a9ad2f94645ea8}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Coded-Character Sets: History and Development}
-      \field{year}{1980}
+      \field{journaltitle}{International Journal of Engineering Research and General Science}
+      \field{number}{1}
+      \field{title}{Deflate compression algorithm}
+      \field{volume}{4}
+      \field{year}{2016}
+      \field{pages}{430\bibrangedash 436}
+      \range{pages}{7}
     \endentry
     \entry{pivkinadiscovery}{article}{}{}
       \name{author}{1}{}{%
@@ -503,6 +504,32 @@
       \field{type}{phdthesis}
       \field{year}{2002}
     \endentry
+    \entry{seward1996bzip2}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b70f7968a027ed142ee1d8a2a34e33bc}{%
+           family={Seward},
+           familyi={S\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{fullhash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{fullhashraw}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{bibnamehash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{authorbibnamehash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{authornamehash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{authorfullhash}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \strng{authorfullhashraw}{b70f7968a027ed142ee1d8a2a34e33bc}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{http://www. bzip. org}
+      \field{title}{bzip2 and libbzip2}
+      \field{year}{1996}
+      \field{pages}{8\bibrangedash 18}
+      \range{pages}{11}
+    \endentry
     \entry{shakespeareCompleteWorks}{book}{}{}
       \name{author}{1}{}{%
         {{hash=878e036d3885377ad13d3702d171ce1f}{%
@@ -588,6 +615,33 @@
       \field{volume}{2}
       \field{year}{1889}
     \endentry
+    \entry{steinruecken2015lossless}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=0fc179bc1efbfdfaa52f56a69a1e5ec0}{%
+           family={Steinruecken},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Cambridge}%
+      }
+      \strng{namehash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{fullhash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{fullhashraw}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{bibnamehash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{authorbibnamehash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{authornamehash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{authorfullhash}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \strng{authorfullhashraw}{0fc179bc1efbfdfaa52f56a69a1e5ec0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lossless data compression}
+      \field{type}{phdthesis}
+      \field{year}{2015}
+    \endentry
     \entry{storer1982data}{article}{}{}
       \name{author}{2}{}{%
         {{hash=9fec20c96fd553fda8024039369eb704}{%
@@ -623,19 +677,6 @@
       \field{year}{1982}
       \field{pages}{928\bibrangedash 951}
       \range{pages}{24}
-    \endentry
-    \entry{unicode170}{manual}{}{}
-      \list{location}{1}{%
-        {San Francisco, CA, United States of America}%
-      }
-      \list{organization}{1}{%
-        {The Unicode Consortium}%
-      }
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labeltitlesource}{title}
-      \field{title}{The Unicode Standard, Version 17.0}
-      \field{year}{2025}
     \endentry
   \enddatalist
 \endrefsection

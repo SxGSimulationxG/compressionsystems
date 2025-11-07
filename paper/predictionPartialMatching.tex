@@ -1,0 +1,31 @@
+\subsection{Prediction with Partial Matching}
+Die Methode der Prediction with Partial Matching (PPM) ist ein kontextbasiertes Verfahren zur Wahrscheinlichkeitsvorhersage und Codierung von Symbolen. Sie verwendet dabei eine spezielle Baumstruktur, einen sogenannten Trie, mit einer maximalen Tiefe $D$. Jeder Knoten im Baum repräsentiert einen Kontext, also eine bestimmte Folge vorheriger Zeichen, und enthält eine eigene Wahrscheinlichkeitsverteilung der möglichen Folgesymbole. Zusätzlich besitzt jeder Knoten sogenannte Vine-Zeiger, die auf übergeordnete Knoten verweisen und so den Übergang zu kürzeren Kontexten ermöglichen.
+
+Der Algorithmus arbeitet in mehreren Schritten\footnote{\cite{steinruecken2015lossless}, p.111–113: 6.3.1 Basic Operation}:
+
+\begin{enumerate}
+	\item Initialisieren Sie einen leeren Trie.
+	\item Wiederholen Sie die folgenden Schritte, bis das Ende der Eingabe erreicht ist:
+	\begin{itemize}
+		\item Lesen Sie das nächste Eingabesymbol.
+		\item Verwenden Sie die Wahrscheinlichkeitsverteilung des aktuellen Knotens, um dieses Symbol zu kodieren.
+		\item Aktualisieren Sie anschließend die Wahrscheinlichkeitsverteilung und den entsprechenden Vine-Knoten.
+		\item Suchen Sie den Knoten, der dem aktuellen Symbol entspricht. Falls die maximale Tiefe $D$ erreicht ist, folgen Sie dem Vine-Zeiger zur nächsthöheren Ebene. Existiert der benötigte Knoten nicht, wird er erstellt und der Baum entsprechend erweitert.
+		\item Setzen Sie den Zeiger des aktuellen Knotens auf den neuen Kindknoten und wechseln Sie zu diesem.
+	\end{itemize}
+\end{enumerate}
+
+Dieses Verfahren lässt sich grafisch darstellen: Die durchgezogenen Linien zeigen den Pfad, den der Algorithmus durchläuft, während die gestrichelten Linien die Vine-Zeiger darstellen. Der schattierte Knoten markiert die Position nach Abschluss der Kodierung:
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1.1\linewidth]{ppm}
+	\caption{Beispiel aus \cite{steinruecken2015lossless}}
+	\label{fig:ppm}
+\end{figure}
+
+Der Vorteil dieser Methode liegt darin, dass sie die Wahrscheinlichkeitsverteilung jedes Symbols dynamisch an den tatsächlichen Kontext der Daten anpasst. Dadurch kann PPM sehr präzise Vorhersagen über das nächste Zeichen treffen und so extrem effiziente Codierungen erzeugen. Insbesondere verbessert sich die Kompressionsleistung gegenüber einfacheren Modellen (wie Null- oder Erstordnungsmodellen), weil PPM Redundanzen über längere Zeichenfolgen hinweg erkennt und nutzt.
+Je tiefer der Kontext (also je größer die Tiefe $D$ des Tries), desto genauer kann der Algorithmus die Symbolwahrscheinlichkeiten abschätzen – allerdings auf Kosten höherer Rechenzeit und Speichernutzung.
+Insgesamt zählt PPM daher zu den effektivsten statistischen Verfahren für verlustfreie Datenkompression.
+
+Dieses Verfahren wird meistens für die Kompression und Verarbeitung von menschlich geschriebenen Texten verwendet\footnote{\cite{steinruecken2015lossless} p.139: Applications of PPM-like Algorithms}.

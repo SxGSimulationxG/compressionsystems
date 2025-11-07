@@ -1,0 +1,11 @@
+\subsection{Block-Sorting Kompressionsalgorithmus}
+Der Block-Sorting-Kompressionsalgorithmus, auch bekannt als Burrows-Wheeler-Transformation (BWT), ist eine Methode zum Sortieren einer Eingabesequenz in eine Form, die für die Komprimierung mit anderen Methoden besser geeignet ist. Wir beginnen mit einer Eingabesequenz $\mathcal{X} = \{x_1 \to x_M\}$ und erstellen eine $M \times M$-Matrix. Jede Zeile der Matrix ist die Eingabesequenz, verschoben um eine Spalte im Gegensatz zur Zeile davor. Anschließend sortieren wir die Matrix alphabetisch und bezeichnen sie als $A$. Die Ausgabe der Transformation besteht aus die letzte Spalte von $A$, die wir als $T$ bezeichnen, und die Index $k$ der angibt, in welcher Zeile die ursprüngliche Sequenz $\mathcal{X}$ steht. Zur Rücktransformation ordnet man die Zeichen in $T$ alphabetisch neu, wodurch eine Liste $L$ entsteht. Mithilfe einer Abbildung $F$, die die Position jedes Zeichens in $L$ zu seiner Position in $T$ speichert, kann man die ursprüngliche Sequenz $\mathcal{X}$ eindeutig rekonstruieren\footnote{\cite{rueda2002advances} p.79-80: 2.6.5 Block Sorting Compression; \cite{steinruecken2015lossless} p.33-34: Block Compression}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1.1\linewidth]{blockSorting}
+	\caption{Beispiel aus \cite{steinruecken2015lossless}}
+	\label{fig:blockSorting}
+\end{figure}
+
+Der eigentliche Vorteil dieser Methode liegt darin, dass die transformierte Sequenz $T$ häufig viele gleiche oder ähnliche Zeichenfolgen enthält. Dadurch wird sie besonders gut für nachgelagerte Verfahren wie Move-to-Front oder Huffman-Codierung geeignet, wie zum Beispiel beim bzip2 Format\footnote{\cite{seward1996bzip2} p.2: 1 Introduction}. Die BWT selbst komprimiert die Daten also nicht direkt, sondern ordnet sie so um, dass andere Kodierungsverfahren ihre Redundanz wesentlich besser ausnutzen können.
