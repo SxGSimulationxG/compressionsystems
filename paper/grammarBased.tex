@@ -1,6 +1,6 @@
-\subsection{Grammatikbasierte Codierung}
+\subsection{Grammatikbasierte Kodierung}
 
-Bei der grammatikbasierten Codierung (englisch: \textit{Grammar-Based Coding}) wird die Eingabesequenz nicht direkt codiert, sondern über eine Grammatik beschrieben, die genau diese Sequenz erzeugt. Dadurch lassen sich Wiederholungen und strukturelle Muster in der Zeichenkette effizient darstellen\footnote{\cite{rueda2002advances} S.80f.: 2.6.6 Grammar-Based Coding}.
+Bei der grammatikbasierten Kodierung (englisch: \textit{Grammar-Based Coding}) wird die Eingabesequenz nicht direkt kodiert, sondern über eine Grammatik beschrieben, die genau diese Sequenz erzeugt. Dadurch lassen sich Wiederholungen und strukturelle Muster in der Zeichenkette effizient darstellen\footnote{\cite{rueda2002advances} S.80f.: 2.6.6 Grammar-Based Coding}.
 
 Eine Grammatik $G$ besteht aus:
 \begin{itemize}
@@ -10,13 +10,13 @@ Eine Grammatik $G$ besteht aus:
 	\item und einem Startsymbol $s$.
 \end{itemize}
 
-Mit diesem höheren Abstraktionsgrad wird nicht die Zeichenkette $x$ selbst codiert, sondern die Grammatik $G_x$, die $x$ eindeutig erzeugt.  
+Mit diesem höheren Abstraktionsgrad wird nicht die Zeichenkette $x$ selbst kodiert, sondern die Grammatik $G_x$, die $x$ eindeutig erzeugt.  
 Da $G_x$ genau eine Zeichenkette erzeugt, handelt es sich um eine kontextfreie Grammatik, für die gilt:
 \begin{equation}
 	L(G_x) = \{x\}
 \end{equation}
 
-Das Ziel der grammatikbasierten Codierung besteht darin, die kleinstmögliche Grammatik zu finden, die eine gegebene Zeichenfolge $x$ beschreibt.  
+Das Ziel der grammatikbasierten Kodierung besteht darin, die kleinstmögliche Grammatik zu finden, die eine gegebene Zeichenfolge $x$ beschreibt.  
 Die Größe einer Grammatik $|G_x|$ entspricht der Anzahl der Symbole auf der rechten Seite der Produktionsregeln $P$.  
 Dieses Optimierungsproblem wird als Smallest Grammar Problem (SGP) bezeichnet\footnote{\cite{charikar2005smallest} S.1f.: Introduction}.
 

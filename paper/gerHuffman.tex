@@ -1,5 +1,5 @@
-\subsection{Huffman Codierung}
-Die Huffman-Kodierung ist ein Verfahren zur Erstellung eines optimalen Präfixcodes für ein gegebenes Sequenzcode mit bekannten Wahrscheinlichkeiten. Das Grundprinzip besteht darin, dass häufig auftretende Symbole kürzere und seltene längere Codewörter erhalten. Zu Beginn wird die Sequenzcode $\mathcal{S}$ nach absteigender Wahrscheinlichkeit sortiert. Jedes Symbol $s_i$ wird durch einen Knoten $q_i$ mit Gewicht $\tau_i = p_i$ in der Liste $\mathcal{Q}$ dargestellt. 
+\subsection{Huffman Kodierung}
+Die Huffman-Kodierung ist ein Verfahren zur Erstellung eines optimalen Präfixcodes für einen gegebenen Sequenzcode mit bekannten Wahrscheinlichkeiten. Das Grundprinzip besteht darin, dass häufig auftretende Symbole kürzere und seltene längere Codewörter erhalten. Zu Beginn wird der Sequenzcode $\mathcal{S}$ nach absteigender Wahrscheinlichkeit sortiert. Jedes Symbol $s_i$ wird durch einen Knoten $q_i$ mit Gewicht $\tau_i = p_i$ in der Liste $\mathcal{Q}$ dargestellt. 
 
 \begin{equation}
 	p_i\geq p_{i+1}\geq \dots \geq p_m
@@ -14,9 +14,9 @@ Wir nehmen dann maximal $r$, mindestens jedoch 2 Zeichen mit der geringsten Wahr
 	q_{new}\leftarrow {q_{new}}_j, \tau_{new}=\sum \tau_i
 \end{equation}
 
-Dieser Vorgang wird so lange wiederholt, bis der gesamte Wahrscheinlichkeitsraum durch einen einzigen Wurzelknoten mit $\tau_{new}=1$ dargestellt wird. Am Ende kann man den Kompressionsbaum visualisieren, indem man die Kinder jedes Knotens nachverfolgen, bis man die Quellzeichen erreicht\footnote{\cite{huffmanOriginal} S.1011: Generalization of the Method; \cite{rueda2002advances} S.50: Algorithm 1 Static Huffman Encoding}.
+Dieser Vorgang wird so lange wiederholt, bis der gesamte Wahrscheinlichkeitsraum durch einen einzigen Wurzelknoten mit $\tau_{new}=1$ dargestellt wird. Am Ende kann man den Kompressionsbaum visualisieren, indem man die Kinder jedes Knotens nachverfolgt, bis man die Quellzeichen erreicht\footnote{\cite{huffmanOriginal} S.1011: Generalization of the Method; \cite{rueda2002advances} S.50: Algorithm 1 Static Huffman Encoding}.
 
-\subsubsection{Beispiel: Statisches Huffman Codierung}
+\subsubsection{Beispiel: Statische Huffman Kodierung}
 
 Eingabe:
 \begin{itemize}

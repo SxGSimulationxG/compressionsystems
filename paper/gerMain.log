@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  7 NOV 2025 20:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  9 NOV 2025 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1068,14 +1068,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 
 
-[4] (einleitung.tex
+[4]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 398.3386pt, 142.26378pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=398.3386pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=56.9055pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ (einleitung.tex
+Overfull \hbox (93.7866pt too wide) in paragraph at lines 2--3
+\OT1/cmr/bx/n/12 pres-si-ons-al-go-rith-men, na-ment-lich Huffman- und Shannon-
+Fano-Kodierungssystemen
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
-[5]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+
+[5
+
+]
+Overfull \hbox (11.62115pt too wide) in paragraph at lines 18--18
+[]\OT1/cmr/bx/n/12 Unterschied zwi-schen ver-lust-frei-en und ver-lust-be-haf-t
+e-ten Kom-
+ []
+
+
 
 [6])
 
@@ -1085,23 +1147,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
  []
 
 )
-Overfull \hbox (20.72874pt too wide) in paragraph at lines 67--3
-\OT1/cmr/m/n/12 Travis Ga-gie schl[]agt ei-ne Me-tho-de zur Er-stel-lung ei-nes
- ad-ap-ti-ven Shannon-Kodierungssystems
- []
-
-
 
 [8]
 
 [9] (gerFano.tex
-<fanoTree.png, id=45, 1927.2pt x 1084.05pt>
+<fanoTree.png, id=46, 1927.2pt x 1084.05pt>
 File: fanoTree.png Graphic file (type png)
 <use fanoTree.png>
 Package pdftex.def Info: fanoTree.png  used on input line 30.
-(pdftex.def)             Requested size: 500.77129pt x 281.68094pt.
+(pdftex.def)             Requested size: 438.17488pt x 246.46461pt.
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 30--31
+Overfull \hbox (39.83629pt too wide) in paragraph at lines 30--31
  [][] 
  []
 
@@ -1110,13 +1166,18 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 30--31
 [10])
 
 [11 <./fanoTree.png>] (gerHuffman.tex
-<huffmanTree.png, id=54, 1927.2pt x 1084.05pt>
+Overfull \hbox (25.71536pt too wide) in paragraph at lines 2--3
+\OT1/cmr/m/n/12 Die Huffman-Kodierung ist ein Ver-fah-ren zur Er-stel-lung ei-n
+es op-ti-ma-len Pr[]afixcodes
+ []
+
+<huffmanTree.png, id=55, 1927.2pt x 1084.05pt>
 File: huffmanTree.png Graphic file (type png)
 <use huffmanTree.png>
 Package pdftex.def Info: huffmanTree.png  used on input line 47.
-(pdftex.def)             Requested size: 500.77129pt x 281.68094pt.
+(pdftex.def)             Requested size: 438.17488pt x 246.46461pt.
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 47--48
+Overfull \hbox (39.83629pt too wide) in paragraph at lines 47--48
  [][] 
  []
 
@@ -1129,66 +1190,80 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 47--48
 [14]
 
 [15] (gerHigherorder.tex (dictionaryBased.tex) (blockSorting.tex
-Overfull \hbox (34.94102pt too wide) in paragraph at lines 2--3
+Overfull \hbox (12.79597pt too wide) in paragraph at lines 2--3
 \OT1/cmr/m/n/12 Der Block-Sorting-Kompressionsalgorithmus, auch be-kannt als Bu
-rrows-Wheeler-Transformation
+rrows-Wheeler-
  []
 
-<blockSorting.png, id=69, 804.75656pt x 220.57407pt>
+<blockSorting.png, id=70, 804.75656pt x 220.57407pt>
 File: blockSorting.png Graphic file (type png)
 <use blockSorting.png>
 Package pdftex.def Info: blockSorting.png  used on input line 6.
-(pdftex.def)             Requested size: 500.77129pt x 137.25598pt.
+(pdftex.def)             Requested size: 438.17488pt x 120.09772pt.
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 6--7
+Overfull \hbox (39.83629pt too wide) in paragraph at lines 6--7
  [][] 
  []
 
 ) (grammarBased.tex
 
-[16 <./blockSorting.png>]) (predictionPartialMatching.tex
+[16 <./blockSorting.png>]
+Overfull \hbox (11.69458pt too wide) in paragraph at lines 19--22
+[]\OT1/cmr/m/n/12 Das Ziel der gram-ma-tik-ba-sier-ten Ko-die-rung be-steht dar
+-in, die kleinstm[]ogliche
+ []
+
+) (predictionPartialMatching.tex
 
 [17]
-<ppm.png, id=78, 759.58781pt x 284.56313pt>
+Overfull \hbox (3.43358pt too wide) in paragraph at lines 12--13
+[]\OT1/cmr/m/n/12 Aktualisieren Sie an-schlie-^^Yend die Wahr-schein-lich-keits
+-ver-tei-lung und
+ []
+
+<ppm.png, id=79, 759.58781pt x 284.56313pt>
 File: ppm.png Graphic file (type png)
 <use ppm.png>
 Package pdftex.def Info: ppm.png  used on input line 22.
-(pdftex.def)             Requested size: 500.77129pt x 187.60815pt.
+(pdftex.def)             Requested size: 438.17488pt x 164.15659pt.
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 22--23
+Overfull \hbox (39.83629pt too wide) in paragraph at lines 22--23
  [][] 
  []
 
+)
 
+[18])
 
-[18 <./ppm.png>]))
-
-[19] (ergebnisse.tex
-Overfull \hbox (8.62764pt too wide) in paragraph at lines 1--1
-[]\OT1/cmr/bx/n/17.28 Vergleich der ur-spr[]unglichen Kom-pres-si-ons-al-go-rit
-h-
- []
-
-<OriginalStorageSizevsAvgCodeWordLength.png, id=87, 602.25pt x 372.39125pt>
+[19 <./ppm.png>] (ergebnisse.tex
+<OriginalStorageSizevsAvgCodeWordLength.png, id=88, 602.25pt x 372.39125pt>
 File: OriginalStorageSizevsAvgCodeWordLength.png Graphic file (type png)
 <use OriginalStorageSizevsAvgCodeWordLength.png>
 Package pdftex.def Info: OriginalStorageSizevsAvgCodeWordLength.png  used on in
 put line 6.
-(pdftex.def)             Requested size: 364.19667pt x 225.20364pt.
-<EntropyvsAvgCodeWordLength.png, id=88, 602.25pt x 372.39125pt>
+(pdftex.def)             Requested size: 318.67209pt x 197.0539pt.
+<EntropyvsAvgCodeWordLength.png, id=89, 602.25pt x 372.39125pt>
 File: EntropyvsAvgCodeWordLength.png Graphic file (type png)
 <use EntropyvsAvgCodeWordLength.png>
 Package pdftex.def Info: EntropyvsAvgCodeWordLength.png  used on input line 13.
 
-(pdftex.def)             Requested size: 364.19667pt x 225.20364pt.
+(pdftex.def)             Requested size: 318.67209pt x 197.0539pt.
 ) (gerConclusion.tex
+Overfull \hbox (19.42651pt too wide) in paragraph at lines 18--1
+[]\OT1/cmr/m/n/12 In Ab-bil-dung 5 l[]asst sich kein kla-rer Zu-sam-men-hang zw
+i-schen dem anf[]anglichen
+ []
+
+
 
 [20 <./OriginalStorageSizevsAvgCodeWordLength.png> <./EntropyvsAvgCodeWordLengt
 h.png>])
 
 [21]
 
-[22] (gerMain.aux)
+[22
+
+] (gerMain.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
@@ -1202,13 +1277,13 @@ Package logreq Info: Writing requests to 'gerMain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27142 strings out of 468130
- 553008 string characters out of 5433965
+ 27145 strings out of 468130
+ 553038 string characters out of 5433965
  1390157 words of memory out of 5000000
- 55316 multiletter control sequences out of 15000+600000
- 634651 words of font info for 67 fonts, out of 8000000 for 9000
+ 55318 multiletter control sequences out of 15000+600000
+ 634820 words of font info for 68 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,14n,101p,3886b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,14n,101p,3418b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\krkai\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><D:/.SoftwareDev/Software Files/miktex/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/public/amsfonts/cm
@@ -1222,10 +1297,11 @@ fonts/cm/cmr7.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/public/ams
 fonts/cm/cmr8.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/public/
-amsfonts/cm/cmti12.pfb>
-Output written on gerMain.pdf (22 pages, 538645 bytes).
+amsfonts/cm/cmti12.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publi
+c/amsfonts/cm/cmtt12.pfb>
+Output written on gerMain.pdf (22 pages, 547134 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
+ 159 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
