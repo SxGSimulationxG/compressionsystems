@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  9 NOV 2025 18:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  9 NOV 2025 19:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1075,11 +1075,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 398.3386pt, 142.26378pt)
+* h-part:(L,W,R)=(56.9055pt, 412.56497pt, 128.0374pt)
 * v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=398.3386pt
+* \textwidth=412.56497pt
 * \textheight=731.23584pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
@@ -1102,12 +1102,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
  (einleitung.tex
-Overfull \hbox (93.7866pt too wide) in paragraph at lines 2--3
-\OT1/cmr/bx/n/12 pres-si-ons-al-go-rith-men, na-ment-lich Huffman- und Shannon-
-Fano-Kodierungssystemen
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -1132,14 +1126,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 [5
 
 ]
-Overfull \hbox (11.62115pt too wide) in paragraph at lines 18--18
-[]\OT1/cmr/bx/n/12 Unterschied zwi-schen ver-lust-frei-en und ver-lust-be-haf-t
-e-ten Kom-
+
+[6]
+Overfull \hbox (2.45984pt too wide) in paragraph at lines 44--45
+\OT1/cmr/m/n/12 Die Pr[]afixfreiheit (oder Pr[]afixeigenschaft) be-deu-tet, das
+s kein Co-de-wort der Pr[]afix
  []
 
-
-
-[6])
+)
 
 [7] (kompressionssysteme.tex (gerShannon.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
@@ -1155,9 +1149,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 File: fanoTree.png Graphic file (type png)
 <use fanoTree.png>
 Package pdftex.def Info: fanoTree.png  used on input line 30.
-(pdftex.def)             Requested size: 438.17488pt x 246.46461pt.
+(pdftex.def)             Requested size: 453.82397pt x 255.26456pt.
 
-Overfull \hbox (39.83629pt too wide) in paragraph at lines 30--31
+Overfull \hbox (41.259pt too wide) in paragraph at lines 30--31
  [][] 
  []
 
@@ -1166,102 +1160,79 @@ Overfull \hbox (39.83629pt too wide) in paragraph at lines 30--31
 [10])
 
 [11 <./fanoTree.png>] (gerHuffman.tex
-Overfull \hbox (25.71536pt too wide) in paragraph at lines 2--3
-\OT1/cmr/m/n/12 Die Huffman-Kodierung ist ein Ver-fah-ren zur Er-stel-lung ei-n
-es op-ti-ma-len Pr[]afixcodes
- []
-
 <huffmanTree.png, id=55, 1927.2pt x 1084.05pt>
 File: huffmanTree.png Graphic file (type png)
 <use huffmanTree.png>
 Package pdftex.def Info: huffmanTree.png  used on input line 47.
-(pdftex.def)             Requested size: 438.17488pt x 246.46461pt.
+(pdftex.def)             Requested size: 453.82397pt x 255.26456pt.
 
-Overfull \hbox (39.83629pt too wide) in paragraph at lines 47--48
+Overfull \hbox (41.259pt too wide) in paragraph at lines 47--48
  [][] 
  []
 
 
 
-[12]
+[12])
 
-[13 <./huffmanTree.png>]))
+[13 <./huffmanTree.png>])
 
-[14]
-
-[15] (gerHigherorder.tex (dictionaryBased.tex) (blockSorting.tex
-Overfull \hbox (12.79597pt too wide) in paragraph at lines 2--3
-\OT1/cmr/m/n/12 Der Block-Sorting-Kompressionsalgorithmus, auch be-kannt als Bu
-rrows-Wheeler-
- []
-
-<blockSorting.png, id=70, 804.75656pt x 220.57407pt>
+[14] (gerHigherorder.tex (dictionaryBased.tex) (blockSorting.tex
+<blockSorting.png, id=67, 804.75656pt x 220.57407pt>
 File: blockSorting.png Graphic file (type png)
 <use blockSorting.png>
 Package pdftex.def Info: blockSorting.png  used on input line 6.
-(pdftex.def)             Requested size: 438.17488pt x 120.09772pt.
+(pdftex.def)             Requested size: 453.82397pt x 124.3856pt.
 
-Overfull \hbox (39.83629pt too wide) in paragraph at lines 6--7
+Overfull \hbox (41.259pt too wide) in paragraph at lines 6--7
  [][] 
  []
 
 ) (grammarBased.tex
 
-[16 <./blockSorting.png>]
-Overfull \hbox (11.69458pt too wide) in paragraph at lines 19--22
-[]\OT1/cmr/m/n/12 Das Ziel der gram-ma-tik-ba-sier-ten Ko-die-rung be-steht dar
--in, die kleinstm[]ogliche
- []
+[15 <./blockSorting.png>]) (predictionPartialMatching.tex
 
-) (predictionPartialMatching.tex
-
-[17]
-Overfull \hbox (3.43358pt too wide) in paragraph at lines 12--13
-[]\OT1/cmr/m/n/12 Aktualisieren Sie an-schlie-^^Yend die Wahr-schein-lich-keits
--ver-tei-lung und
- []
-
-<ppm.png, id=79, 759.58781pt x 284.56313pt>
+[16]
+<ppm.png, id=76, 759.58781pt x 284.56313pt>
 File: ppm.png Graphic file (type png)
 <use ppm.png>
 Package pdftex.def Info: ppm.png  used on input line 22.
-(pdftex.def)             Requested size: 438.17488pt x 164.15659pt.
+(pdftex.def)             Requested size: 453.82397pt x 170.0184pt.
 
-Overfull \hbox (39.83629pt too wide) in paragraph at lines 22--23
+Overfull \hbox (41.259pt too wide) in paragraph at lines 22--23
  [][] 
  []
 
-)
 
-[18])
 
-[19 <./ppm.png>] (ergebnisse.tex
-<OriginalStorageSizevsAvgCodeWordLength.png, id=88, 602.25pt x 372.39125pt>
+[17 <./ppm.png>]))
+
+[18] (ergebnisse.tex
+<OriginalStorageSizevsAvgCodeWordLength.png, id=84, 602.25pt x 372.39125pt>
 File: OriginalStorageSizevsAvgCodeWordLength.png Graphic file (type png)
 <use OriginalStorageSizevsAvgCodeWordLength.png>
 Package pdftex.def Info: OriginalStorageSizevsAvgCodeWordLength.png  used on in
 put line 6.
-(pdftex.def)             Requested size: 318.67209pt x 197.0539pt.
-<EntropyvsAvgCodeWordLength.png, id=89, 602.25pt x 372.39125pt>
+(pdftex.def)             Requested size: 330.05322pt x 204.08849pt.
+<EntropyvsAvgCodeWordLength.png, id=85, 602.25pt x 372.39125pt>
 File: EntropyvsAvgCodeWordLength.png Graphic file (type png)
 <use EntropyvsAvgCodeWordLength.png>
 Package pdftex.def Info: EntropyvsAvgCodeWordLength.png  used on input line 13.
 
-(pdftex.def)             Requested size: 318.67209pt x 197.0539pt.
+(pdftex.def)             Requested size: 330.05322pt x 204.08849pt.
 ) (gerConclusion.tex
-Overfull \hbox (19.42651pt too wide) in paragraph at lines 18--1
+Overfull \hbox (5.20013pt too wide) in paragraph at lines 18--1
 []\OT1/cmr/m/n/12 In Ab-bil-dung 5 l[]asst sich kein kla-rer Zu-sam-men-hang zw
 i-schen dem anf[]anglichen
  []
 
 
 
-[20 <./OriginalStorageSizevsAvgCodeWordLength.png> <./EntropyvsAvgCodeWordLengt
+[19 <./OriginalStorageSizevsAvgCodeWordLength.png> <./EntropyvsAvgCodeWordLengt
 h.png>])
 
-[21]
+[20]
 
-[22
+[21
 
 ] (gerMain.aux)
  ***********
@@ -1299,9 +1270,9 @@ fonts/cm/cmsy10.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/public/
 amsfonts/cm/cmti12.pfb><D:/.SoftwareDev/Software Files/miktex/fonts/type1/publi
 c/amsfonts/cm/cmtt12.pfb>
-Output written on gerMain.pdf (22 pages, 547134 bytes).
+Output written on gerMain.pdf (21 pages, 546795 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
+ 156 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
